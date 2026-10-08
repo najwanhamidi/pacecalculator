@@ -1,0 +1,4802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="OmniPace">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#0b0f19" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
+  
+  <title>OmniPace Mobile - Multi-Calculator Running Suite</title>
+  
+  <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIk9tbmlQYWNlIFJ1bm5pbmcgU3VpdGUiLCAic2hvcnRfbmFtZSI6ICJPbW5pUGFjZSIsICJkZXNjcmlwdGlvbiI6ICJNdWx0aS1DYWxjdWxhdG9yIFJ1bm5pbmcgU3VpdGUgJiBDcml0aWNhbCBWZWxvY2l0eSAoQ1YpIEFuYWx5emVyIiwgInN0YXJ0X3VybCI6ICIuL2luZGV4Lmh0bWwiLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiIzA4MGMxNCIsICJ0aGVtZV9jb2xvciI6ICIjMDgwYzE0IiwgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0LXByaW1hcnkiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFNQUFBQURBQ0FZQUFBQlMzR3dIQUFBR3prbEVRVlI0bk8zZHU1SGNSaFNGNGNVVTVkQm1BcXJpeHNCTUdNZUVBcVhCVEppQW5HVVZFNkM5amd5cVFJbGJtQms4K24xZi8yZkpXb0cxNTNUZnhtQXgwNU15N3o5OC9DbDlEZWpyOWNlMzZVa0owUXNoN0pBdXhhUTI5TmVYcjkwdkJtUE56NSswbFdGU0VYekNIdGU4WDRvUlJaakVnay9va1ZpR25rV1kxQVkvY2J1RUlkZTYzMzJQSWt4cWdrL2c0N21XWmFKbEVhYnU0VC82UnhKNkZPYWtWUW1tNGNFbjlEaVRrWjNhSWt6RHdrL3drU3N4UnpVbG1KcUduK0NqaDRSY2xaYmdVbnBOaEIvRGJFMFBkNlVvZmFwZzZoSit4aDMwY3BLMTNKMGdld2NnL0JCMXY3aFc3Z1JaQlNEODhGYUNxVW40R1hrZzVTQ0hLZU5RMGc1QStLSFdPdlFGTzhGcEFRZy9QSmNnN3hETUU1eXdJQ09uaHdXNGFRKzNPbUgwWUh5MEMrd1c0SERyNE5BTGpRNXl1WmZudEJHSU96NXdjQjVJTHNEaDZBTlljaklLNVIyQ0dYMWdRVVpPTDhtclArR0hnMUhvZmhjb2Zob1U4T0NtQUt6K2lMWUxzQU1ndExjQ3NQb2o0aTdBRG9EUUhndkFmWDk0ZHBmdnkrRmpEOXo2aEFjN09WNXl6d2lFMEc0THdQaURDRlk1Mzk4QkdIL2d5VTZlR1lFUTJvV3ZLVExpK2lKOUJTNnhBMWhBK0FjVWdDYy9kU0w4WFQ4VlpnZEFhQlJBTTFiLzdpaUFWb1IvQ0FwZ0pmenpzOFNWdUVjQnRHSGxING9DYUVMNGg2TUFDSTBDYU1IcUw0SUNhRUQ0eFZBQWFZUmZGQVdRUlBqRlVRQXBoRjhGQ29EUUtJRHc2di81ejM5RUxnSC9vUUFLd245YUFoNkQ2SVlDak1UY3J3NEZFQXIvL2FyUEtDU0RBaWhhK1NuQmVCUkFBRUhYZ3dJSWp6NzNLTWRZRkVEaG9aY1NqRU1CQm9hZllPdERBWlNHbjdLTVFRRVUzK3VuQlAxUmdBRnFna3dKK3FJQUxmRkpyemtVb0hQNFc2emduLy82dS9wbllCc0ZVQjcrdDU5RkNicWdBTFVZZTB5akFKM0MzK1B3eWk3UUhnVXdoaEswUlFHTXJQN29nd0lZREQrN1FEc1V3T2lobHhLMFFRRWFocC9SeHg0S1lHemxYMk1YcUVjQkdwRmEvU2xCSFFxUWd0SEhMUXBnY1BTNXh5NVFqZ0pVaGwvTHdaY1NsS0VBRHNLUGNoVEE2Tml6aFYwZ0h3VW9wSFgxcHdSNUtJQ1QxWCtORXFTakFHdTh3akFjQ3VBMC9Pd0NhU2lBazdGbkN5VTRSd0V5d205bDlVYzZDdUFjdThDeDJBVUlzdnBUZ24xeEN4QWsvRGoyN2lraXA0ZmVzMTNneS9jLzZuL1EvUHprU2J3ZElEUDhYbFovd3I4dFZnR0NocitKMmRmS0g3TUFRVld2L3JQUDhNY3FRTkRWbi9BZmkxR0FnSWZlQmVFLzU3OEFCZUgzc3ZwWG1mMk9QWEZ1Z3hhdS9FM3VtQWlYYmVTL3dUSy9PMERRc1dmQjZKUE9id0dDSXZ4NWZCYkF5T3F2N3F3eHg1ajdmUmZBU1BqVnJmNXp2UEQ3UEFSci9VVjJMaWJoTCtOdkJ3aUk4SmVqQUpISHNsbnBiamtRQllpNitoUCtYeWlBNFR0QWhMOGVCVENLOExkQkFTSmg3SGxBQVF3ZWdJdFdmOEsvaVFJWXcwTnViVkVBUTVqNzI2TUEzcDhCWXZRNVJBR01ZTzd2Z3dJWU9BQVQvbjRvZ0hLRXZ5OEs0QTB6ZnhZSzRHbjFKL3paS0lEU08wQ0Vmd3dLb1BBQVRQakhvUURXTWZaVW9RREtaSzMraEw4YUJWQ0U4STlIQVpUZ0lUY1pGR0RnQWJqWk0wQ01QczFRQUFVWWZlUlFBR0dFWHhZRkVFVDQ1VkVBQzVqNXU2RUFRcDhBSjYvK2hMOHJDakRJK2c0UTRkZURBZ3hHK0hXaEFCb3g5Z3hEQVFiTy8wbXJQK0VmaWdJTVF2aDFvZ0Jhc1BLTG9BQUlqUUpvd09vdmhnSkkvd2trNFJkRkFTUVJmbkVVUUFyaFY0RUNTQ0Q4YWxDQTBRaS9LaFJnNUFHWThLdERBVVloL0NwUmdCRUl2MW9Vb0RmQ3J4b0Y2SW53cTBjQmVoMkFDYjhKRkFDaFVZQWVXUDNOb0FDdEVYNVRLRUJMaE44Y0N0RHFBRXo0VGFJQUxSQitCd1dZbnorOS9mZjE1YXZROWRoRCtPMVk1L3IvdkxNRDFDRDg1bDFlZjN5YnBDOENrTUlPZ05EMkM4QTVBSjdzNVBtMkFPdURNT0RWS3VlTVFBanRWd0YyRDhLTVFmQmdKOGRMN2g5M0FNWWdlSGFYYjBZZ2hQWldnSnN4aUUrRjRmalQzM1hlMlFFUTJrMEIyQVVRYWZWZnNBTWd0SWNDc0FzZ3l1cWZ2d1B3dVFBc3lNanBaZ0YyZHdIQW1vUFZQMzBINExZb2pJOCtlM1lMY1BoM0FveEMwT2dnbDN0NVB0d0JEa2NoU2dCTjd2TjRNdnFVSFlJNUQ4Q0NqSnllRnVDaFBad0hZR2p1UC91VDM2UWRnQkxBWS9nWFdYOFEvLzdEeDUrNy8vT05Dd0M2T2NsZTZzc2VzczRBaHp2QjFrVUJpc05mOUN3UUpZQ1g4QytLM3dsME9nNXRYQnhRTENGZkplKzRLbjRhOUhRbldEQVNRWEg0RjlWdmhYdllDUmJzQm1naE1VYzFiemRzOGxyRTVCSXNHSXR3SmlNN3RhLzJiUHBlMEt3aUxDZ0RDblBTNnAyMnpWK011MW1DbFBNQVpZam5XcGFKbGk5MDd2Wm02T0lpL0VZaC9MblcvZTU3dk1tOCs2dlJxNHVBT09aeHdmOXQySGNEN0JaaFFSbmltdmMvS3hyeDNSWER2eHpqc0FocmxNS2ZPZTJEMFpGZjJpTDY3VERKWllCN3IwTGZWUFF2NGhUOS9hZHo0WFlBQUFBQVNVVk9SSzVDWUlJPSIsICJzaXplcyI6ICIxOTJ4MTkyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn1dfQ==">
+  <style>
+/* ==========================================================================
+   OmniPace Mobile - iOS Native Style System
+   Engineered for iPhone 15 Pro Max & Modern Mobile Safari / PWA
+   ========================================================================== */
+
+:root {
+  /* Safe Area Dimensions */
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+
+  /* Apple System Typography */
+  --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: "SF Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+
+  /* Touch Standards */
+  --min-tap: 44px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 9999px;
+
+  /* Brand Accents */
+  --color-primary: #0a84ff;
+  --color-mcmillan: #30d158;
+  --color-tinman: #ff9f0a;
+  --color-daniels: #0a84ff;
+  --color-hansons: #ffd60a;
+  --color-eightytwenty: #64d2ff;
+  --color-runnerscalc: #bf5af2;
+  --color-classic: #ff453a;
+}
+
+/* ==========================================================================
+   Dark Theme (Default iOS Dark Mode)
+   ========================================================================== */
+body.dark-theme {
+  --bg-app: #080c14;
+  --bg-surface: #121927;
+  --bg-surface-elevated: #1a2336;
+  --bg-surface-subtle: #242f48;
+  --bg-card: rgba(26, 35, 54, 0.75);
+  --bg-glass: rgba(18, 25, 39, 0.82);
+  --bg-input: #172033;
+  --border-color: rgba(255, 255, 255, 0.09);
+  --border-focus: #0a84ff;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.45);
+  --shadow-dock: 0 -4px 25px rgba(0, 0, 0, 0.5);
+  --badge-fastest-bg: rgba(48, 209, 88, 0.18);
+  --badge-fastest-color: #30d158;
+  --badge-slowest-bg: rgba(255, 159, 10, 0.18);
+  --badge-slowest-color: #ff9f0a;
+  --badge-average-bg: rgba(10, 132, 255, 0.18);
+  --badge-average-color: #60a5fa;
+}
+
+/* ==========================================================================
+   Light Theme (iOS Light Mode)
+   ========================================================================== */
+body.light-theme {
+  --bg-app: #f2f2f7;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f9f9fc;
+  --bg-surface-subtle: #e5e5ea;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  --bg-input: #f2f2f7;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-focus: #007aff;
+  --text-primary: #1c1c1e;
+  --text-secondary: #636366;
+  --text-muted: #8e8e93;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.08);
+  --shadow-dock: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  --badge-fastest-bg: rgba(52, 199, 89, 0.15);
+  --badge-fastest-color: #248a3d;
+  --badge-slowest-bg: rgba(255, 149, 0, 0.15);
+  --badge-slowest-color: #c96b00;
+  --badge-average-bg: rgba(0, 122, 255, 0.15);
+  --badge-average-color: #005ecb;
+}
+
+/* ==========================================================================
+   Base & Reset
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-family: var(--font-system);
+  font-size: 16px;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  padding-bottom: calc(85px + var(--sab)); /* Dock clearance */
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+/* Status Bar & Safe Area Spacers */
+.safe-area-top {
+  height: var(--sat);
+  background-color: var(--bg-surface);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.safe-area-bottom {
+  height: var(--sab);
+}
+
+/* ==========================================================================
+   App Header (iOS Navigation Bar)
+   ========================================================================== */
+.app-header {
+  position: sticky;
+  top: var(--sat);
+  z-index: 900;
+  background-color: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 16px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.brand-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, var(--color-primary), #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-sub {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: -2px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* iOS Segmented Pill Button */
+.ios-pill-btn {
+  display: flex;
+  background: var(--bg-surface-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  padding: 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+.pill-option {
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  color: var(--text-secondary);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pill-option.active {
+  background: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* iOS Icon Button */
+.ios-icon-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-surface-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  color: var(--text-primary);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.ios-icon-btn:active {
+  transform: scale(0.92);
+}
+
+/* ==========================================================================
+   Horizontal Scrollable Segmented Tab Bar
+   ========================================================================== */
+.nav-tab-scroller {
+  position: sticky;
+  top: calc(var(--sat) + 57px);
+  z-index: 850;
+  background-color: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-color);
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.nav-tab-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-scroller-inner {
+  display: flex;
+  padding: 8px 12px;
+  gap: 8px;
+  min-width: max-content;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.nav-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  min-height: 36px;
+}
+
+.nav-tab-btn .tab-icon {
+  font-size: 0.95rem;
+}
+
+.nav-tab-btn.active {
+  background: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(10, 132, 255, 0.4);
+}
+
+.nav-tab-btn:active {
+  transform: scale(0.95);
+}
+
+/* ==========================================================================
+   Main Content Layout
+   ========================================================================== */
+.app-main {
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Mobile Performance Input Console Card
+   ========================================================================== */
+.mobile-input-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Benchmark Presets Chips Slider */
+.benchmarks-slider-wrapper {
+  overflow-x: auto;
+  margin: -4px -8px;
+  padding: 4px 8px;
+  scrollbar-width: none;
+  width: calc(100% + 16px);
+  min-width: 0;
+}
+
+.benchmarks-slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.benchmarks-slider {
+  display: flex;
+  gap: 8px;
+  min-width: max-content;
+}
+
+.chip-btn {
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface-elevated);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.chip-btn.active {
+  background: var(--bg-surface-subtle);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.chip-btn:active {
+  transform: scale(0.94);
+}
+
+/* Form Grid */
+.input-form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* iOS Select */
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.ios-select {
+  width: 100%;
+  height: 48px;
+  padding: 0 38px 0 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-input);
+  color: var(--text-primary);
+  font-size: 1.05rem; /* Prevent iOS zoom */
+  font-weight: 600;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.ios-select:focus {
+  border-color: var(--border-focus);
+}
+
+.select-chevron {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Custom Distance Row */
+.custom-dist-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ios-input {
+  flex: 1;
+  height: 48px;
+  padding: 0 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-input);
+  color: var(--text-primary);
+  font-size: 1.05rem; /* >= 16px */
+  font-weight: 600;
+  outline: none;
+}
+
+.ios-input:focus {
+  border-color: var(--border-focus);
+}
+
+/* Time Inputs Container (HH : MM : SS) */
+.time-inputs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.time-box {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ios-time-input {
+  width: 100%;
+  height: 54px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0 0 14px 0;
+  outline: none;
+  -moz-appearance: textfield;
+}
+
+.ios-time-input::-webkit-outer-spin-button,
+.ios-time-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.ios-time-input:focus {
+  border-color: var(--border-focus);
+  background: var(--bg-surface-elevated);
+}
+
+.time-sub {
+  position: absolute;
+  bottom: 5px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  pointer-events: none;
+}
+
+.time-colon {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-top: -12px;
+}
+
+/* Quick Steppers Row */
+.stepper-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: -2px;
+}
+
+.stepper-btn {
+  height: 38px;
+  background: var(--bg-surface-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.stepper-btn:active {
+  background: var(--color-primary);
+  color: #ffffff;
+  transform: scale(0.94);
+}
+
+/* Feedback Strip */
+.feedback-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+}
+
+.feedback-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.feedback-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.feedback-val {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.feedback-divider {
+  width: 1px;
+  height: 24px;
+  background: var(--border-color);
+}
+
+/* Advanced Parameters Drawer */
+.advanced-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+
+.advanced-toggle-btn:active {
+  background: var(--bg-surface-subtle);
+}
+
+.advanced-params-drawer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  background: var(--bg-surface-elevated);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.slider-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.ios-range {
+  width: 100%;
+  accent-color: var(--color-primary);
+  height: 6px;
+}
+
+/* ==========================================================================
+   Tab Panels & Views
+   ========================================================================== */
+.tab-panels-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+}
+
+.tab-content-panel {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  animation: fadeIn 0.2s ease-out;
+  width: 100%;
+  min-width: 0;
+}
+
+.tab-content-panel.active {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Section Titles */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* View Switcher Pill (Cards vs Table) */
+.view-switcher-pill {
+  display: flex;
+  background: var(--bg-surface-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  padding: 2px;
+  gap: 2px;
+}
+
+.view-btn {
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.view-btn.active {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================================
+   Synthesis Cards (Overall Tab Top Grid)
+   ========================================================================== */
+.synthesis-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 540px) {
+  .synthesis-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.synthesis-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.synthesis-card.highlight {
+  border-left: 4px solid var(--color-tinman);
+}
+
+.synthesis-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.synthesis-card-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.synthesis-card-icon {
+  font-size: 1.1rem;
+}
+
+.synthesis-card-body {
+  margin-bottom: 8px;
+}
+
+.primary-val {
+  font-size: 1.45rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.primary-sub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.synthesis-card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-color);
+  padding-top: 8px;
+}
+
+/* ==========================================================================
+   Mobile Accordion / Card View Components
+   ========================================================================== */
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 14px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.mobile-card.is-cv {
+  border-left: 4px solid var(--color-tinman);
+  background: linear-gradient(135deg, var(--bg-surface), rgba(255, 159, 10, 0.05));
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+
+.card-main-metric {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.card-avg-val {
+  font-size: 1.25rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.card-avg-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Range Strip */
+.card-range-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-surface-elevated);
+  border-radius: var(--radius-md);
+  padding: 8px 10px;
+  font-size: 0.75rem;
+  gap: 8px;
+}
+
+.range-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+  flex: 1;
+}
+
+.range-item.right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.range-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.range-tag.fast { color: var(--color-mcmillan); }
+.range-tag.slow { color: var(--color-tinman); }
+
+.range-val {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.range-model {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+}
+
+/* Expandable Breakdown Drawer */
+.card-accordion-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-top: 1px solid var(--border-color);
+  margin-top: 2px;
+}
+
+.card-breakdown-drawer {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 6px;
+  border-top: 1px solid var(--border-color);
+}
+
+.card-breakdown-drawer.open {
+  display: flex;
+}
+
+.breakdown-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface-elevated);
+}
+
+.breakdown-calc-name {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.breakdown-calc-val {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* ==========================================================================
+   Table View Components (Horizontal Panned with Sticky First Col)
+   ========================================================================== */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  min-width: 580px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.data-table th {
+  background: var(--bg-surface-elevated);
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.data-table td {
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tr.highlight-row {
+  background: rgba(255, 159, 10, 0.08);
+}
+
+/* Status Badges */
+.badge {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.badge-fastest {
+  background: var(--badge-fastest-bg);
+  color: var(--badge-fastest-color);
+}
+
+.badge-slowest {
+  background: var(--badge-slowest-bg);
+  color: var(--badge-slowest-color);
+}
+
+.badge-average {
+  background: var(--badge-average-bg);
+  color: var(--badge-average-color);
+}
+
+/* ==========================================================================
+   Calculator Hero Cards
+   ========================================================================== */
+.calculator-hero {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hero-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.brand-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hero-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.hero-source-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero-metric-box {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.metric-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.metric-number {
+  font-size: 1.6rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  line-height: 1.2;
+}
+
+.metric-sub {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   SVG Interactive Charts (Mobile Optimized)
+   ========================================================================== */
+.chart-container {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: var(--shadow-sm);
+}
+
+.chart-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chart-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.svg-chart-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.svg-chart {
+  width: 100%;
+  height: 100%;
+}
+
+/* ==========================================================================
+   Analytical Insights Accordion
+   ========================================================================== */
+.insight-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.insight-box h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.insight-box p {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   Sticky Mobile Bottom Action Dock (Above Home Indicator)
+   ========================================================================== */
+.mobile-bottom-dock {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--bg-glass);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-top: 1px solid var(--border-color);
+  box-shadow: var(--shadow-dock);
+  display: flex;
+  flex-direction: column;
+}
+
+.dock-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.dock-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dock-meta-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-tinman);
+  letter-spacing: 0.04em;
+}
+
+.dock-meta-val {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.dock-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dock-btn {
+  height: 38px;
+  padding: 0 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface-subtle);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.dock-btn-primary {
+  background: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(10, 132, 255, 0.4);
+}
+
+.dock-btn:active {
+  transform: scale(0.93);
+}
+
+/* ==========================================================================
+   Mobile Toast Notification
+   ========================================================================== */
+.mobile-toast {
+  position: fixed;
+  top: calc(var(--sat) + 70px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  background: rgba(18, 25, 39, 0.95);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.light-theme .mobile-toast {
+  background: rgba(28, 28, 30, 0.92);
+}
+
+.mobile-toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+</style>
+  <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAGzklEQVR4nO3du5HcRhSF4cUU5dBmAqrixsBMGMeEAqXBTJiAnGUVE6C9jgyqQIlbmBk8+n1f/2fJWoG153TfxmAx05My7z98/Cl9Dejr9ce36UkJ0Qsh7JAuxaQ29NeXr90vBmPNz5+0lWFSEXzCHte8X4oRRZjEgk/okViGnkWY1AY/cbuEIde6332PIkxqgk/g47mWZaJlEabu4T/6RxJ6FOakVQmm4cEn9DiTkZ3aIkzDwk/wkSsxRzUlmJqGn+Cjh4RclZbgUnpNhB/DbE0Pd6Uofapg6hJ+xh30cpK13J0gewcg/BB1v7hW7gRZBSD88FaCqUn4GXkg5SCHKeNQ0g5A+KHWOvQFO8FpAQg/PJcg7xDME5ywICOnhwW4aQ+3OmH0YHy0C+wW4HDr4NALjQ5yuZfntBGIOz5wcB5ILsDh6ANYcjIK5R2CGX1gQUZOL8mrP+GHg1HofhcofhoU8OCmAKz+iLYLsAMgtLcCsPoj4i7ADoDQHgvAfX94dpfvy+FjD9z6hAc7OV5yzwiE0G4LwPiDCFY5398BGH/gyU6eGYEQ2oWvKTLi+iJ9BS6xA1hA+AcUgCc/dSL8XT8VZgdAaBRAM1b/7iiAVoR/CApgJfzzs8SVuEcBtGHlH4oCaEL4h6MACI0CaMHqL4ICaED4xVAAaYRfFAWQRPjFUQAphF8FCoDQKIDw6v/5z39ELgH/oQAKwn9aAh6D6IYCjMTcrw4FEAr//arPKCSDAiha+SnBeBRAAEHXgwIIjz73KMdYFEDhoZcSjEMBBoafYOtDAZSGn7KMQQEU3+unBP1RgAFqgkwJ+qIALfFJrzkUoHP4W6zgn//6u/pnYBsFUB7+t59FCbqgALUYe0yjAJ3C3+Pwyi7QHgUwhhK0RQGMrP7ogwIYDD+7QDsUwOihlxK0QQEahp/Rxx4KYGzlX2MXqEcBGpFa/SlBHQqQgtHHLQpgcPS5xy5QjgJUhl/LwZcSlKEADsKPchTA6NizhV0gHwUopHX1pwR5KICT1X+NEqSjAGu8wjAcCuA0/OwCaSiAk7FnCyU4RwEywm9l9Uc6CuAcu8Cx2AUIsvpTgn1xCxAk/Dj27ikip4fes13gy/c/6n/Q/PzkSbwdIDP8XlZ/wr8tVgGChr+J2dfKH7MAQVWv/rPP8McqQNDVn/Afi1GAgIfeBeE/578ABeH3svpXmf2OPXFugxau/E3umAiXbeS/wTK/O0DQsWfB6JPObwGCIvx5fBbAyOqv7qwxx5j7fRfASPjVrf5zvPD7PARr/UV2LibhL+NvBwiI8JejAJHHslnpbjkQBYi6+hP+XyiA4TtAhL8eBTCK8LdBASJh7HlAAQwegItWf8K/iQIYw0NubVEAQ5j726MA3p8BYvQ5RAGMYO7vgwIYOAAT/n4ogHKEvy8K4A0zfxYK4Gn1J/zZKIDSO0CEfwwKoPAATPjHoQDWMfZUoQDKZK3+hL8aBVCE8I9HAZTgITcZFGDgAbjZM0CMPs1QAAUYfeRQAGGEXxYFEET45VEAC5j5u6EAQp8AJ6/+hL8rCjDI+g4Q4deDAgxG+HWhABox9gxDAQbO/0mrP+EfigIMQvh1ogBasPKLoAAIjQJowOovhgJI/wkk4RdFASQRfnEUQArhV4ECSCD8alCA0Qi/KhRg5AGY8KtDAUYh/CpRgBEIv1oUoDfCrxoF6Inwq0cBeh2ACb8JFAChUYAeWP3NoACtEX5TKEBLhN8cCtDqAEz4TaIALRB+BwWYnz+9/ff15avQ9dhD+O1Y5/r/vLMD1CD85l1ef3ybpC8CkMIOgND2C8A5AJ7s5Pm2AOuDMODVKueMQAjtVwF2D8KMQfBgJ8dL7h93AMYgeHaXb0YghPZWgJsxiE+F4fjT33Xe2QEQ2k0B2AUQafVfsAMgtIcCsAsgyuqfvwPwuQAsyMjpZgF2dwHAmoPVP30H4LYojI8+e3YLcPh3AoxC0Oggl3t5PtwBDkchSgBN7vN4MvqUHYI5D8CCjJyeFuChPZwHYGjuP/uT36QdgBLAY/gXWX8Q//7Dx5+7//ONCwC6Ocle6ssess4AhzvB1kUBisNf9CwQJYCX8C+K3wl0Og5tXBxQLCFfJe+4Kn4a9HQnWDASQXH4F9VvhXvYCRbsBmghMUc1bzds8lrE5BIsGItwJiM7ta/2bPpe0KwiLCgDCnPS6p22zV+Mu1mClPMAZYjnWpaJli907vZm6OIi/EYh/LnW/e57vMm8+6vRq4uAOOZxwf9t2HcD7BZhQRnimvc/Kxrx3RXDvxzjsAhrlMKfOe2D0ZFf2iL67TDJZYB7r0LfVPQv4hT9/adz4XYAAAAASUVORK5CYII=">
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAGzklEQVR4nO3du5HcRhSF4cUU5dBmAqrixsBMGMeEAqXBTJiAnGUVE6C9jgyqQIlbmBk8+n1f/2fJWoG153TfxmAx05My7z98/Cl9Dejr9ce36UkJ0Qsh7JAuxaQ29NeXr90vBmPNz5+0lWFSEXzCHte8X4oRRZjEgk/okViGnkWY1AY/cbuEIde6332PIkxqgk/g47mWZaJlEabu4T/6RxJ6FOakVQmm4cEn9DiTkZ3aIkzDwk/wkSsxRzUlmJqGn+Cjh4RclZbgUnpNhB/DbE0Pd6Uofapg6hJ+xh30cpK13J0gewcg/BB1v7hW7gRZBSD88FaCqUn4GXkg5SCHKeNQ0g5A+KHWOvQFO8FpAQg/PJcg7xDME5ywICOnhwW4aQ+3OmH0YHy0C+wW4HDr4NALjQ5yuZfntBGIOz5wcB5ILsDh6ANYcjIK5R2CGX1gQUZOL8mrP+GHg1HofhcofhoU8OCmAKz+iLYLsAMgtLcCsPoj4i7ADoDQHgvAfX94dpfvy+FjD9z6hAc7OV5yzwiE0G4LwPiDCFY5398BGH/gyU6eGYEQ2oWvKTLi+iJ9BS6xA1hA+AcUgCc/dSL8XT8VZgdAaBRAM1b/7iiAVoR/CApgJfzzs8SVuEcBtGHlH4oCaEL4h6MACI0CaMHqL4ICaED4xVAAaYRfFAWQRPjFUQAphF8FCoDQKIDw6v/5z39ELgH/oQAKwn9aAh6D6IYCjMTcrw4FEAr//arPKCSDAiha+SnBeBRAAEHXgwIIjz73KMdYFEDhoZcSjEMBBoafYOtDAZSGn7KMQQEU3+unBP1RgAFqgkwJ+qIALfFJrzkUoHP4W6zgn//6u/pnYBsFUB7+t59FCbqgALUYe0yjAJ3C3+Pwyi7QHgUwhhK0RQGMrP7ogwIYDD+7QDsUwOihlxK0QQEahp/Rxx4KYGzlX2MXqEcBGpFa/SlBHQqQgtHHLQpgcPS5xy5QjgJUhl/LwZcSlKEADsKPchTA6NizhV0gHwUopHX1pwR5KICT1X+NEqSjAGu8wjAcCuA0/OwCaSiAk7FnCyU4RwEywm9l9Uc6CuAcu8Cx2AUIsvpTgn1xCxAk/Dj27ikip4fes13gy/c/6n/Q/PzkSbwdIDP8XlZ/wr8tVgGChr+J2dfKH7MAQVWv/rPP8McqQNDVn/Afi1GAgIfeBeE/578ABeH3svpXmf2OPXFugxau/E3umAiXbeS/wTK/O0DQsWfB6JPObwGCIvx5fBbAyOqv7qwxx5j7fRfASPjVrf5zvPD7PARr/UV2LibhL+NvBwiI8JejAJHHslnpbjkQBYi6+hP+XyiA4TtAhL8eBTCK8LdBASJh7HlAAQwegItWf8K/iQIYw0NubVEAQ5j726MA3p8BYvQ5RAGMYO7vgwIYOAAT/n4ogHKEvy8K4A0zfxYK4Gn1J/zZKIDSO0CEfwwKoPAATPjHoQDWMfZUoQDKZK3+hL8aBVCE8I9HAZTgITcZFGDgAbjZM0CMPs1QAAUYfeRQAGGEXxYFEET45VEAC5j5u6EAQp8AJ6/+hL8rCjDI+g4Q4deDAgxG+HWhABox9gxDAQbO/0mrP+EfigIMQvh1ogBasPKLoAAIjQJowOovhgJI/wkk4RdFASQRfnEUQArhV4ECSCD8alCA0Qi/KhRg5AGY8KtDAUYh/CpRgBEIv1oUoDfCrxoF6Inwq0cBeh2ACb8JFAChUYAeWP3NoACtEX5TKEBLhN8cCtDqAEz4TaIALRB+BwWYnz+9/ff15avQ9dhD+O1Y5/r/vLMD1CD85l1ef3ybpC8CkMIOgND2C8A5AJ7s5Pm2AOuDMODVKueMQAjtVwF2D8KMQfBgJ8dL7h93AMYgeHaXb0YghPZWgJsxiE+F4fjT33Xe2QEQ2k0B2AUQafVfsAMgtIcCsAsgyuqfvwPwuQAsyMjpZgF2dwHAmoPVP30H4LYojI8+e3YLcPh3AoxC0Oggl3t5PtwBDkchSgBN7vN4MvqUHYI5D8CCjJyeFuChPZwHYGjuP/uT36QdgBLAY/gXWX8Q//7Dx5+7//ONCwC6Ocle6ssess4AhzvB1kUBisNf9CwQJYCX8C+K3wl0Og5tXBxQLCFfJe+4Kn4a9HQnWDASQXH4F9VvhXvYCRbsBmghMUc1bzds8lrE5BIsGItwJiM7ta/2bPpe0KwiLCgDCnPS6p22zV+Mu1mClPMAZYjnWpaJli907vZm6OIi/EYh/LnW/e57vMm8+6vRq4uAOOZxwf9t2HcD7BZhQRnimvc/Kxrx3RXDvxzjsAhrlMKfOe2D0ZFf2iL67TDJZYB7r0LfVPQv4hT9/adz4XYAAAAASUVORK5CYII=">
+</head>
+<body class="dark-theme">
+  <!-- Status Bar Safe Area Spacer (Dynamic Island on iPhone 15 Pro Max) -->
+  <div class="safe-area-top"></div>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="header-brand">
+        <span class="brand-icon">⚡</span>
+        <div>
+          <h1 class="brand-title">OmniPace</h1>
+          <span class="brand-sub">Mobile Running Suite</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="unit-toggle-btn" class="ios-pill-btn" aria-label="Toggle Units">
+          <span id="unit-pill-km" class="pill-option active">KM</span>
+          <span id="unit-pill-mi" class="pill-option">MI</span>
+        </button>
+        <button id="theme-toggle-btn" class="ios-icon-btn" aria-label="Toggle Theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="copy-summary-btn" class="ios-icon-btn" aria-label="Share / Copy Summary" title="Copy Summary">
+          <span>📋</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Segmented Tab Bar (Horizontal Scroll on Mobile) -->
+  <nav class="nav-tab-scroller" id="tab-scroller" aria-label="Calculators">
+    <div class="tab-scroller-inner">
+      <button class="nav-tab-btn active" data-tab="overall">
+        <span class="tab-icon">📊</span>
+        <span class="tab-label">Overall</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="mcmillan">
+        <span class="tab-icon">🟩</span>
+        <span class="tab-label">McMillan</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="tinman">
+        <span class="tab-icon">🟧</span>
+        <span class="tab-label">Tinman (CV)</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="daniels">
+        <span class="tab-icon">🟦</span>
+        <span class="tab-label">Daniels</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="hansons">
+        <span class="tab-icon">🟨</span>
+        <span class="tab-label">Hansons</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="eightytwenty">
+        <span class="tab-icon">💠</span>
+        <span class="tab-label">80/20</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="runnerscalc">
+        <span class="tab-icon">🟪</span>
+        <span class="tab-label">RunnersCalc</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="additional">
+        <span class="tab-icon">🟥</span>
+        <span class="tab-label">Classic</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="app-main">
+    <!-- Performance Input Console Card (Mobile Ergonomic) -->
+    <section class="mobile-input-card">
+      <!-- Quick Benchmarks Chips -->
+      <div class="benchmarks-slider-wrapper">
+        <div class="benchmarks-slider" id="benchmarks-slider">
+          <button class="chip-btn active" data-preset="sub20-5k">Sub-20 5K</button>
+          <button class="chip-btn" data-preset="24min-5k">24:00 5K</button>
+          <button class="chip-btn" data-preset="sub40-10k">Sub-40 10K</button>
+          <button class="chip-btn" data-preset="45min-10k">45:00 10K</button>
+          <button class="chip-btn" data-preset="sub90-half">Sub-1:30 HM</button>
+          <button class="chip-btn" data-preset="sub145-half">Sub-1:45 HM</button>
+          <button class="chip-btn" data-preset="sub3-marathon">Sub-3:00 Marathon</button>
+          <button class="chip-btn" data-preset="sub330-marathon">Sub-3:30 Marathon</button>
+          <button class="chip-btn" data-preset="sub4-marathon">Sub-4:00 Marathon</button>
+        </div>
+      </div>
+
+      <!-- Distance and Time Row -->
+      <div class="input-form-grid">
+        <!-- Distance Selector -->
+        <div class="input-field-group">
+          <label for="distance-preset-select" class="input-label">Race Distance</label>
+          <div class="select-wrapper">
+            <select id="distance-preset-select" class="ios-select">
+              <optgroup label="Popular Events">
+                <option value="5000" selected>5K Road (5.00 km)</option>
+                <option value="10000">10K Road (10.00 km)</option>
+                <option value="21097.5">Half Marathon (21.10 km)</option>
+                <option value="42195">Marathon (42.20 km)</option>
+                <option value="1609.344">1 Mile (1.61 km)</option>
+              </optgroup>
+              <optgroup label="Track Distances">
+                <option value="400">400m Track</option>
+                <option value="800">800m Track</option>
+                <option value="1500">1500m Track</option>
+                <option value="1600">1600m Track</option>
+                <option value="3000">3000m Track</option>
+              </optgroup>
+              <optgroup label="Other Road & Ultra">
+                <option value="3218.688">2 Miles (3.22 km)</option>
+                <option value="8000">8K Road (8.00 km)</option>
+                <option value="8046.72">5 Miles (8.05 km)</option>
+                <option value="15000">15K Road (15.00 km)</option>
+                <option value="16093.44">10 Miles (16.09 km)</option>
+                <option value="50000">50K Ultra (50.00 km)</option>
+                <option value="100000">100K Ultra (100.00 km)</option>
+                <option value="custom">⚙️ Custom Distance...</option>
+              </optgroup>
+            </select>
+            <span class="select-chevron">▾</span>
+          </div>
+        </div>
+
+        <!-- Custom Distance Row (Conditional) -->
+        <div id="custom-distance-group" class="custom-dist-row" style="display:none;">
+          <input type="number" id="custom-distance-val" class="ios-input" placeholder="Value" step="0.01" min="0.1" inputmode="decimal">
+          <select id="custom-distance-unit" class="ios-select" style="max-width: 110px;">
+            <option value="km" selected>km</option>
+            <option value="mi">miles</option>
+            <option value="m">meters</option>
+          </select>
+        </div>
+
+        <!-- Finish Time Inputs -->
+        <div class="input-field-group">
+          <label class="input-label">Finish Time (HH : MM : SS)</label>
+          <div class="time-inputs-container">
+            <div class="time-box">
+              <input type="number" id="time-hours" class="ios-time-input" placeholder="00" min="0" max="99" value="0" inputmode="numeric">
+              <span class="time-sub">HR</span>
+            </div>
+            <span class="time-colon">:</span>
+            <div class="time-box">
+              <input type="number" id="time-minutes" class="ios-time-input" placeholder="00" min="0" max="59" value="20" inputmode="numeric">
+              <span class="time-sub">MIN</span>
+            </div>
+            <span class="time-colon">:</span>
+            <div class="time-box">
+              <input type="number" id="time-seconds" class="ios-time-input" placeholder="00" min="0" max="59" value="0" inputmode="numeric">
+              <span class="time-sub">SEC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Stepper Adjusters for Mobile Thumb -->
+        <div class="stepper-row">
+          <button type="button" class="stepper-btn" data-step="-60">-1m</button>
+          <button type="button" class="stepper-btn" data-step="-10">-10s</button>
+          <button type="button" class="stepper-btn" data-step="+10">+10s</button>
+          <button type="button" class="stepper-btn" data-step="+60">+1m</button>
+        </div>
+      </div>
+
+      <!-- Realtime Feedback Strip -->
+      <div class="feedback-strip">
+        <div class="feedback-col">
+          <span class="feedback-label">Avg Pace</span>
+          <span id="feedback-pace" class="feedback-val font-mono">4:00 /km</span>
+        </div>
+        <div class="feedback-divider"></div>
+        <div class="feedback-col">
+          <span class="feedback-label">Speed</span>
+          <span id="feedback-speed" class="feedback-val font-mono">15.00 km/h</span>
+        </div>
+        <div class="feedback-divider"></div>
+        <div class="feedback-col">
+          <span class="feedback-label">Fitness</span>
+          <span id="feedback-vdot" class="feedback-val font-mono">VDOT 49.8</span>
+        </div>
+      </div>
+
+      <!-- Collapsible Advanced Training Settings -->
+      <button type="button" id="optional-controls-toggle" class="advanced-toggle-btn">
+        <span>⚙️ Advanced Settings (Weekly Mileage & Fatigue Exponent)</span>
+        <span class="toggle-arrow">▾</span>
+      </button>
+
+      <div id="optional-params" class="advanced-params-drawer" style="display:none;">
+        <div class="slider-group">
+          <div class="slider-header">
+            <span>Weekly Mileage (Vickers Model)</span>
+            <span id="weekly-miles-display" class="font-mono">40 mi/week</span>
+          </div>
+          <input type="range" id="weekly-miles-input" min="15" max="120" step="5" value="40" class="ios-range">
+        </div>
+        <div class="slider-group">
+          <div class="slider-header">
+            <span>Peter Riegel Fatigue Exponent</span>
+            <span id="riegel-exponent-display" class="font-mono">1.06</span>
+          </div>
+          <input type="range" id="riegel-exponent-input" min="1.02" max="1.15" step="0.01" value="1.06" class="ios-range">
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab Panels Container -->
+    <div class="tab-panels-wrapper">
+      <!-- 1. Overall Tab Panel -->
+      <div id="overall-panel" class="tab-content-panel active">
+        <div id="overall-panel-content">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <!-- 2. McMillan Panel -->
+      <div id="mcmillan-panel" class="tab-content-panel">
+        <div id="mcmillan-panel-content"></div>
+      </div>
+
+      <!-- 3. Tinman Panel -->
+      <div id="tinman-panel" class="tab-content-panel">
+        <div id="tinman-panel-content"></div>
+      </div>
+
+      <!-- 4. Daniels Panel -->
+      <div id="daniels-panel" class="tab-content-panel">
+        <div id="daniels-panel-content"></div>
+      </div>
+
+      <!-- 5. Hansons Panel -->
+      <div id="hansons-panel" class="tab-content-panel">
+        <div id="hansons-panel-content"></div>
+      </div>
+
+      <!-- 6. 80/20 Panel -->
+      <div id="eightytwenty-panel" class="tab-content-panel">
+        <div id="eightytwenty-panel-content"></div>
+      </div>
+
+      <!-- 7. RunnersCalc Panel -->
+      <div id="runnerscalc-panel" class="tab-content-panel">
+        <div id="runnerscalc-panel-content"></div>
+      </div>
+
+      <!-- 8. Additional Classic Panel -->
+      <div id="additional-panel" class="tab-content-panel">
+        <div id="additional-panel-content"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sticky Mobile Bottom Bar / Quick Action Dock -->
+  <footer class="mobile-bottom-dock">
+    <div class="dock-content">
+      <div class="dock-left">
+        <span class="dock-meta-label">Est. Critical Velocity (CV)</span>
+        <span id="dock-cv-pace" class="dock-meta-val font-mono">4:08 /km</span>
+      </div>
+      <div class="dock-actions">
+        <button id="dock-unit-toggle" class="dock-btn">
+          <span id="dock-unit-label">min/km</span>
+        </button>
+        <button id="dock-copy-btn" class="dock-btn dock-btn-primary">
+          <span>📋 Copy</span>
+        </button>
+      </div>
+    </div>
+    <div class="safe-area-bottom"></div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="mobile-toast" class="mobile-toast" role="alert" aria-live="polite"></div>
+
+  <!-- Core JavaScript Modules -->
+  <script>
+/**
+ * OmniPace - Unified Running Calculators Engine (Faithful Online Formulations)
+ * 
+ * 1. Jack Daniels VDOT (vdoto2.com & Daniels' Running Formula)
+ * 2. Greg McMillan Running (mcmillanrunning.com)
+ * 3. Tom Schwartz / Tinman (finalsurge.com/tinman-calculator)
+ * 4. Luke Humphrey / Hansons Marathon Method (lukehumphreyrunning.com/hmmcalculator)
+ * 5. RunnersCalc (runnerscalc.com/pages/race-time-predictor - Exact Riegel 1.06 Script 8)
+ * 6. 80/20 Endurance (8020endurance.com/80-20-zone-calculator - Exact JS Chunk 5252 Table 'j')
+ * 7. Pete Pfitzinger, Jeff Galloway & Frank Horwill (Classic Systems)
+ * 8. Comparison Engine (Cross-Model Synthesis, Highest, Lowest, Average, Spread)
+ */
+
+(function (global) {
+  'use strict';
+
+  // Standard Distances in meters
+  const STANDARD_DISTANCES = [
+    { id: '400m', name: '400m', meters: 400, category: 'Track' },
+    { id: '800m', name: '800m', meters: 800, category: 'Track' },
+    { id: '1500m', name: '1500m', meters: 1500, category: 'Track' },
+    { id: '1600m', name: '1600m', meters: 1600, category: 'Track' },
+    { id: '1mi', name: '1 Mile', meters: 1609.344, category: 'Road' },
+    { id: '3000m', name: '3000m', meters: 3000, category: 'Track' },
+    { id: '2mi', name: '2 Miles', meters: 3218.688, category: 'Road' },
+    { id: '5k', name: '5K', meters: 5000, category: 'Road' },
+    { id: '8k', name: '8K', meters: 8000, category: 'Road' },
+    { id: '5mi', name: '5 Miles', meters: 8046.72, category: 'Road' },
+    { id: '10k', name: '10K', meters: 10000, category: 'Road' },
+    { id: '12k', name: '12K', meters: 12000, category: 'Road' },
+    { id: '15k', name: '15K', meters: 15000, category: 'Road' },
+    { id: '10mi', name: '10 Miles', meters: 16093.44, category: 'Road' },
+    { id: '20k', name: '20K', meters: 20000, category: 'Road' },
+    { id: 'half', name: 'Half Marathon', meters: 21097.5, category: 'Road' },
+    { id: '25k', name: '25K', meters: 25000, category: 'Road' },
+    { id: '30k', name: '30K', meters: 30000, category: 'Road' },
+    { id: '20mi', name: '20 Miles', meters: 32186.88, category: 'Road' },
+    { id: 'marathon', name: 'Marathon', meters: 42195, category: 'Road' },
+    { id: '50k', name: '50K Ultra', meters: 50000, category: 'Ultra' },
+    { id: '50mi', name: '50 Miles', meters: 80467.2, category: 'Ultra' },
+    { id: '100k', name: '100K Ultra', meters: 100000, category: 'Ultra' },
+    { id: '100mi', name: '100 Miles', meters: 160934.4, category: 'Ultra' }
+  ];
+
+  const Units = {
+    M_PER_MI: 1609.344,
+    M_PER_KM: 1000.0,
+
+    formatTime(totalSeconds, includeHours = false) {
+      if (!Number.isFinite(totalSeconds) || totalSeconds <= 0) return '--:--';
+      const sec = Math.round(totalSeconds);
+      const h = Math.floor(sec / 3600);
+      const m = Math.floor((sec % 3600) / 60);
+      const s = sec % 60;
+      if (h > 0 || includeHours) {
+        return `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+      }
+      return `${m}:${String(s).padStart(2, '0')}`;
+    },
+
+    formatPace(secPerKm, isImperial = false) {
+      if (!Number.isFinite(secPerKm) || secPerKm <= 0) return '--:--';
+      const sec = isImperial ? secPerKm * (this.M_PER_MI / 1000.0) : secPerKm;
+      const unit = isImperial ? '/mi' : '/km';
+      return `${this.formatTime(sec, false)} ${unit}`;
+    },
+
+    paceSeconds(secPerKm, isImperial = false) {
+      return isImperial ? secPerKm * (this.M_PER_MI / 1000.0) : secPerKm;
+    },
+
+    velocityToSecPerKm(vMetersPerMin) {
+      if (!vMetersPerMin || vMetersPerMin <= 0) return 0;
+      return (1000.0 / vMetersPerMin) * 60.0;
+    },
+
+    secPerKmToVelocity(secPerKm) {
+      if (!secPerKm || secPerKm <= 0) return 0;
+      return (1000.0 / secPerKm) * 60.0;
+    }
+  };
+
+  /* ==========================================================================
+     1. JACK DANIELS VDOT (vdoto2.com & Daniels' Running Formula)
+     ========================================================================== */
+  const DanielsVDOT = {
+    id: 'daniels',
+    name: "Jack Daniels' VDOT",
+    sourceUrl: 'https://vdoto2.com/calculator',
+    description: "Dr. Jack Daniels' Oxygen Power formula. Converts your race performance into a VDOT score and outputs official training paces matching the V.O2 calculator.",
+
+    vo2AtVelocity(v) {
+      return -4.60 + 0.182258 * v + 0.000104 * v * v;
+    },
+
+    percentVo2MaxAtTime(tMin) {
+      return 0.8 + 0.1894393 * Math.exp(-0.012778 * tMin) + 0.2989558 * Math.exp(-0.1932605 * tMin);
+    },
+
+    velocityAtVo2(vo2) {
+      const a = 0.000104;
+      const b = 0.182258;
+      const c = -(4.60 + vo2);
+      return (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+    },
+
+    calculateVDOT(distanceM, timeSec) {
+      const tMin = timeSec / 60.0;
+      const v = distanceM / tMin;
+      const vo2 = this.vo2AtVelocity(v);
+      const pct = this.percentVo2MaxAtTime(tMin);
+      return vo2 / pct;
+    },
+
+    predictTime(vdot, distanceM) {
+      let low = 0.1;
+      let high = 50000.0;
+      for (let i = 0; i < 60; i++) {
+        const mid = (low + high) / 2.0;
+        const v = distanceM / mid;
+        const vo2 = this.vo2AtVelocity(v);
+        const pct = this.percentVo2MaxAtTime(mid);
+        if ((vo2 / pct) > vdot) {
+          low = mid;
+        } else {
+          high = mid;
+        }
+      }
+      return ((low + high) / 2.0) * 60.0;
+    },
+
+    calculate(distanceM, timeSec) {
+      const vdot = this.calculateVDOT(distanceM, timeSec);
+
+      // Equivalent race times across distances
+      const raceTimes = STANDARD_DISTANCES.map(d => {
+        const predictedSec = this.predictTime(vdot, d.meters);
+        return {
+          id: d.id,
+          name: d.name,
+          meters: d.meters,
+          category: d.category,
+          timeSec: predictedSec,
+          paceSecPerKm: (predictedSec / d.meters) * 1000.0
+        };
+      });
+
+      // Jack Daniels Official Paces (matching Table 2.2 and vdoto2.com):
+      // 1. Marathon Pace (M): Exactly predicted marathon pace!
+      const mTimeSec = this.predictTime(vdot, 42195);
+      const pM = (mTimeSec / 42.195); // sec per km
+
+      // 2. Threshold Pace (T): Velocity at 88% VDOT
+      const vT = this.velocityAtVo2(0.88 * vdot);
+      const pT = Units.velocityToSecPerKm(vT);
+
+      // 3. Interval Pace (I): Velocity at 97.5% VDOT
+      const vI = this.velocityAtVo2(0.975 * vdot);
+      const pI = Units.velocityToSecPerKm(vI);
+
+      // 4. Repetition Pace (R): ~5.5-6 sec per 400m faster than Interval pace (~1.05-1.06 v_vdot)
+      const sec400_i = (pI / 1000.0) * 400.0;
+      const sec400_r = Math.max(45, sec400_i - 5.5);
+      const pR = (sec400_r / 400.0) * 1000.0;
+
+      // 5. Easy Pace (E): In Daniels tables, E pace fast is M pace + 50s/km (+1:20/mi),
+      // and E pace slow is M pace + 76s/km (+2:02/mi).
+      const pE_fast = pM + 50.0;
+      const pE_slow = pM + 76.0;
+
+      const trainingPaces = [
+        {
+          name: 'Easy (E)',
+          intensity: '59% - 74% VO2max (65% - 79% HRmax)',
+          purpose: 'Recovery, foundation mileage, cardiac stroke volume, capillarization',
+          paceSecPerKmMin: pE_fast,
+          paceSecPerKmMax: pE_slow,
+          singlePace: false,
+          splits: {
+            '400m': Units.formatTime(((pE_fast + pE_slow) / 2) * 0.4),
+            '1000m': Units.formatTime(((pE_fast + pE_slow) / 2) * 1.0)
+          }
+        },
+        {
+          name: 'Marathon (M)',
+          intensity: '~84% VO2max (80% - 90% HRmax)',
+          purpose: 'Glycogen sparing, aerobic threshold, race tempo confidence',
+          paceSecPerKm: pM,
+          singlePace: true,
+          splits: {
+            '1000m': Units.formatTime(pM * 1.0),
+            '1mi': Units.formatTime(pM * (Units.M_PER_MI / 1000))
+          }
+        },
+        {
+          name: 'Threshold (T)',
+          intensity: '~88% VO2max (88% - 92% HRmax, ~60-min race pace)',
+          purpose: 'Maximal lactate steady state, endurance cruising, tempo runs',
+          paceSecPerKm: pT,
+          singlePace: true,
+          splits: {
+            '400m': Units.formatTime(pT * 0.4),
+            '1000m': Units.formatTime(pT * 1.0),
+            '1200m': Units.formatTime(pT * 1.2),
+            '1mi': Units.formatTime(pT * (Units.M_PER_MI / 1000))
+          }
+        },
+        {
+          name: 'Interval (I)',
+          intensity: '~97.5% - 100% VO2max (98% - 100% HRmax, 3K-5K pace)',
+          purpose: 'Aerobic power, maximum oxygen uptake (VO2max) stimulation',
+          paceSecPerKm: pI,
+          singlePace: true,
+          splits: {
+            '400m': Units.formatTime(pI * 0.4),
+            '800m': Units.formatTime(pI * 0.8),
+            '1000m': Units.formatTime(pI * 1.0),
+            '1200m': Units.formatTime(pI * 1.2)
+          }
+        },
+        {
+          name: 'Repetition (R)',
+          intensity: 'Fast / Anaerobic (800m - 1500m pace)',
+          purpose: 'Running economy, biomechanical efficiency, speed reserve, full recovery between reps',
+          paceSecPerKm: pR,
+          singlePace: true,
+          splits: {
+            '200m': Units.formatTime(pR * 0.2),
+            '300m': Units.formatTime(pR * 0.3),
+            '400m': Units.formatTime(pR * 0.4),
+            '600m': Units.formatTime(pR * 0.6)
+          }
+        }
+      ];
+
+      return {
+        id: this.id,
+        name: this.name,
+        sourceUrl: this.sourceUrl,
+        metricTitle: 'VDOT Score',
+        metricValue: vdot.toFixed(1),
+        metricSub: `Predicted Marathon: ${Units.formatTime(mTimeSec, true)} | T-Pace: ${Units.formatPace(pT, false)}`,
+        raceTimes,
+        trainingPaces,
+        details: {
+          vdot: Number(vdot.toFixed(1)),
+          mTimeSec,
+          pT,
+          pM,
+          pI,
+          pR,
+          pE_fast,
+          pE_slow
+        }
+      };
+    }
+  };
+
+  /* ==========================================================================
+     2. GREG MCMILLAN RUNNING CALCULATOR (mcmillanrunning.com)
+     Exact Official Online Implementation from mcmillanrunning.com
+     ========================================================================== */
+  const McMillanRunning = {
+    id: 'mcmillan',
+    name: 'McMillan Running',
+    sourceUrl: 'https://www.mcmillanrunning.com/dashboard/',
+    description: "Greg McMillan's official running calculator. Uses exact empirical performance curves, 3-pillar training paces, and specialty velocities (vLT, CV, vVO2).",
+
+    // Exact empirical ratios to 5K finish time from mcmillanrunning.com:
+    distanceRatios: {
+      100: 0.014083,
+      200: 0.028167,
+      400: 0.058917,
+      500: 0.076833,
+      600: 0.094333,
+      800: 0.129333,
+      1000: 0.170000,
+      1500: 0.266333,
+      1600: 0.286250,
+      1609.344: 0.288083, // 1 Mile
+      2000: 0.365833,
+      2414.02: 0.450083,  // 1.5 Miles
+      3000: 0.569250,
+      3200: 0.608167,
+      3218.688: 0.612000, // 2 Miles
+      4000: 0.782500,
+      4828.032: 0.957500, // 3 Miles
+      5000: 1.000000,     // 5K Anchor
+      6000: 1.210000,
+      6437.376: 1.300000, // 4 Miles
+      8000: 1.647500,     // 8K
+      8046.72: 1.658333,  // 5 Miles
+      10000: 2.076667,    // 10K
+      12000: 2.525000,    // 12K
+      15000: 3.217500,    // 15K
+      16093.44: 3.470833, // 10 Miles
+      20000: 4.377500,    // 20K
+      21097.5: 4.630000,  // Half Marathon
+      24140.16: 5.357500, // 15 Miles
+      25000: 5.562500,    // 25K
+      30000: 6.764167,    // 30K
+      32186.88: 7.288333, // 20 Miles
+      40233.6: 9.226667,  // 25 Miles
+      42195: 9.744167,    // Marathon
+      50000: 11.820000,   // 50K
+      80467.2: 21.618333, // 50 Miles
+      100000: 28.482500,  // 100K
+      160934.4: 56.259167 // 100 Miles
+    },
+
+    // Interpolation for any custom distance in meters:
+    getDistanceRatio(targetM) {
+      if (this.distanceRatios[targetM]) return this.distanceRatios[targetM];
+      const keys = Object.keys(this.distanceRatios).map(Number).sort((a, b) => a - b);
+      if (targetM <= keys[0]) return (targetM / 5000.0) * (this.distanceRatios[keys[0]] / (keys[0] / 5000.0));
+      if (targetM >= keys[keys.length - 1]) {
+        return Math.pow(targetM / 5000.0, 1.0674);
+      }
+      for (let i = 0; i < keys.length - 1; i++) {
+        if (targetM >= keys[i] && targetM <= keys[i + 1]) {
+          const ratioA = this.distanceRatios[keys[i]];
+          const ratioB = this.distanceRatios[keys[i + 1]];
+          const logDist = (Math.log(targetM) - Math.log(keys[i])) / (Math.log(keys[i + 1]) - Math.log(keys[i]));
+          return Math.exp(Math.log(ratioA) + logDist * (Math.log(ratioB) - Math.log(ratioA)));
+        }
+      }
+      return Math.pow(targetM / 5000.0, 1.06);
+    },
+
+    // Convert any input performance to equivalent 5K time:
+    toEquivalent5kTime(distanceM, timeSec) {
+      const ratio = this.getDistanceRatio(distanceM);
+      return timeSec / ratio;
+    },
+
+    predictTime(distanceM, inputDistM, inputTimeSec) {
+      const t5k = this.toEquivalent5kTime(inputDistM, inputTimeSec);
+      const targetRatio = this.getDistanceRatio(distanceM);
+      return t5k * targetRatio;
+    },
+
+    calculate(distanceM, timeSec) {
+      const t5k = this.toEquivalent5kTime(distanceM, timeSec);
+      const p5k = t5k / 5.0; // 5K pace in sec/km
+
+      const raceTimes = STANDARD_DISTANCES.map(d => {
+        const predictedSec = this.predictTime(d.meters, distanceM, timeSec);
+        return {
+          id: d.id,
+          name: d.name,
+          meters: d.meters,
+          category: d.category,
+          timeSec: predictedSec,
+          paceSecPerKm: (predictedSec / d.meters) * 1000.0
+        };
+      });
+
+      // McMillan Official Specialty Velocities:
+      const vltPace = p5k * 1.0708;  // Lactate Threshold (~4:17/km for 20:00 5k)
+      const cvPace = p5k * 1.0208;   // Critical Velocity (~4:05/km for 20:00 5k)
+      const vvo2Pace = p5k * 0.9208; // VO2 Max (~3:41/km for 20:00 5k)
+
+      // McMillan Official 3-Pillar Training Paces:
+      const trainingPaces = [
+        {
+          pillar: 'Endurance',
+          name: 'Recovery Jogs',
+          intensity: '55% - 65% HRR (1.33x - 1.44x 5K Pace)',
+          purpose: 'Active recovery, clears metabolic waste, restores neuromuscular pathways',
+          paceSecPerKmMin: p5k * 1.3333,
+          paceSecPerKmMax: p5k * 1.4417,
+          singlePace: false
+        },
+        {
+          pillar: 'Endurance',
+          name: 'Easy Runs',
+          intensity: '65% - 75% HRR (1.17x - 1.32x 5K Pace)',
+          purpose: 'Foundation aerobic base building, conversationally paced daily mileage',
+          paceSecPerKmMin: p5k * 1.1667,
+          paceSecPerKmMax: p5k * 1.3208,
+          singlePace: false
+        },
+        {
+          pillar: 'Endurance',
+          name: 'Long Runs (Progression)',
+          intensity: 'Endurance Base (1.18x - 1.37x 5K Pace)',
+          purpose: 'Aerobic endurance, fat oxidation efficiency, stamina for marathon finish',
+          paceSecPerKmMin: p5k * 1.1750,
+          paceSecPerKmMax: p5k * 1.3708,
+          singlePace: false
+        },
+        {
+          pillar: 'Stamina',
+          name: 'Double Threshold / Moderate',
+          intensity: 'Sub-Threshold cruising (1.12x - 1.13x 5K Pace)',
+          purpose: 'High volume lactate clearing without heavy central nervous system fatigue',
+          paceSecPerKmMin: p5k * 1.1167,
+          paceSecPerKmMax: p5k * 1.1333,
+          singlePace: false
+        },
+        {
+          pillar: 'Stamina',
+          name: 'Steady-State Runs',
+          intensity: '75-min to 2:30 race pace (1.08x - 1.13x 5K Pace)',
+          purpose: 'Aerobic threshold cruising, marathon-specific stamina',
+          paceSecPerKmMin: p5k * 1.0833,
+          paceSecPerKmMax: p5k * 1.1333,
+          singlePace: false
+        },
+        {
+          pillar: 'Stamina',
+          name: 'Tempo Runs',
+          intensity: '40-min to 75-min race pace (1.04x - 1.08x 5K Pace)',
+          purpose: 'Comfortably hard continuous 15-30 min efforts (classic lactate threshold)',
+          paceSecPerKmMin: p5k * 1.0375,
+          paceSecPerKmMax: p5k * 1.0792,
+          singlePace: false
+        },
+        {
+          pillar: 'Stamina',
+          name: 'Tempo Intervals',
+          intensity: '15-min to 40-min race pace (1.025x - 1.067x 5K Pace)',
+          purpose: 'Repeated intervals with short recovery to accumulate time at threshold',
+          paceSecPerKmMin: p5k * 1.0250,
+          paceSecPerKmMax: p5k * 1.0667,
+          singlePace: false
+        },
+        {
+          pillar: 'Stamina',
+          name: '★ Critical Velocity (CV)',
+          intensity: 'Official McMillan CV (1.021x 5K Pace)',
+          purpose: 'High aerobic power and Type IIa intermediate fiber development',
+          paceSecPerKm: cvPace,
+          singlePace: true,
+          isHighlight: true,
+          splits: {
+            '400m': Units.formatTime(cvPace * 0.4),
+            '800m': Units.formatTime(cvPace * 0.8),
+            '1000m': Units.formatTime(cvPace * 1.0),
+            '1200m': Units.formatTime(cvPace * 1.2),
+            '1mi': Units.formatTime(cvPace * (Units.M_PER_MI / 1000))
+          }
+        },
+        {
+          pillar: 'Stamina',
+          name: 'Cruise Intervals',
+          intensity: '8K to 10K race pace (1.01x - 1.04x 5K Pace)',
+          purpose: 'Short intervals (800m-1600m) with 30-60s rest',
+          paceSecPerKmMin: p5k * 1.0083,
+          paceSecPerKmMax: p5k * 1.0375,
+          singlePace: false
+        },
+        {
+          pillar: 'Speed',
+          name: 'Speed Work (Intervals)',
+          intensity: '3K to 5K race pace (0.94x - 1.00x 5K Pace)',
+          purpose: 'VO2max aerobic power stimulation (400m - 1200m repeats)',
+          paceSecPerKmMin: p5k * 0.9417,
+          paceSecPerKmMax: p5k * 1.0000,
+          singlePace: false
+        },
+        {
+          pillar: 'Speed',
+          name: 'Speed Work (Repetitions)',
+          intensity: '800m to 1500m race pace (0.89x - 0.94x 5K Pace)',
+          purpose: 'Anaerobic capacity, neuromuscular turnover, speed reserve',
+          paceSecPerKmMin: p5k * 0.8917,
+          paceSecPerKmMax: p5k * 0.9417,
+          singlePace: false
+        },
+        {
+          pillar: 'Speed',
+          name: 'Sprint / Strides',
+          intensity: '200m to 400m sprint pace (0.71x - 0.80x 5K Pace)',
+          purpose: 'Maximum motor unit recruitment, sprint mechanics, finishing kick',
+          paceSecPerKmMin: p5k * 0.7083,
+          paceSecPerKmMax: p5k * 0.8000,
+          singlePace: false
+        }
+      ];
+
+      const mTime = this.predictTime(42195, distanceM, timeSec);
+      const hmTime = this.predictTime(21097.5, distanceM, timeSec);
+      const tenkTime = this.predictTime(10000, distanceM, timeSec);
+
+      return {
+        id: this.id,
+        name: this.name,
+        sourceUrl: this.sourceUrl,
+        metricTitle: 'McMillan Marathon Prediction',
+        metricValue: Units.formatTime(mTime, true),
+        metricSub: `CV: ${Units.formatPace(cvPace, false)} | vLT: ${Units.formatPace(vltPace, false)} | HM: ${Units.formatTime(hmTime, true)}`,
+        raceTimes,
+        trainingPaces,
+        cvPace,
+        vltPace,
+        vvo2Pace
+      };
+    }
+  };
+
+  /* ==========================================================================
+     3. TOM SCHWARTZ / TINMAN (finalsurge.com/tinman-calculator)
+     Exact Official Nuxt Implementation from Final Surge
+     ========================================================================== */
+  const TinmanSchwartz = {
+    id: 'tinman',
+    name: 'Tinman (Tom Schwartz)',
+    sourceUrl: 'https://www.finalsurge.com/tinman-calculator',
+    description: "Tom 'Tinman' Schwartz's official Critical Velocity (CV) calculator from Final Surge. Uses exact polynomial modeling and VO2max velocity decay.",
+
+    // Converts any race performance into 3K equivalent time in seconds (d)
+    calculate3kTime(distanceM, timeSec) {
+      const l = distanceM / 1000.0; // distance in km
+      const r = timeSec;
+      let n = 0;
+      if (l >= 3.0) {
+        n = 0.00020960050866 * Math.pow(1000.0 * l, 1.05794632923601);
+      } else if (l >= 0.8 && l < 3.0) {
+        const o = l / 3.0;
+        n = -1.9322997266 * Math.pow(o, 4) + 4.545124741 * Math.pow(o, 3) - 3.6776695099 * Math.pow(o, 2) + 2.2510185164 * o - 0.1861740208;
+      } else {
+        const m = l / 3.0;
+        n = -3.0124583021 * Math.pow(m, 3) + 2.2687044727 * Math.pow(m, 2) + 0.4521524043 * m + 0.0042132813;
+      }
+      return r / n;
+    },
+
+    // Predicts race finish time for any target distance from 3K equivalent
+    predictTimeFrom3k(distanceM, time3k) {
+      const e = distanceM;
+      const r = e / 3000.0;
+      let factor;
+      if (e <= 1500.0 || Math.abs(e - 3000.0) < 0.1) {
+        factor = -4.16259 * Math.pow(r, 6) + 7.39963 * Math.pow(r, 5) - 1.8619 * Math.pow(r, 4) - 3.17729 * Math.pow(r, 3) + 2.35405 * Math.pow(r, 2) + 0.44362 * r + 0.00448;
+      } else if (e <= 2400.0) {
+        factor = 1.0667 * r - 0.0667;
+      } else {
+        factor = 0.00020960050866 * Math.pow(e, 1.05794632923601);
+      }
+      return factor * time3k;
+    },
+
+    predictTime(distanceM, inputDistM, inputTimeSec) {
+      const time3k = this.calculate3kTime(inputDistM, inputTimeSec);
+      return this.predictTimeFrom3k(distanceM, time3k);
+    },
+
+    calculate(distanceM, timeSec) {
+      const time3k = this.calculate3kTime(distanceM, timeSec);
+      const h = time3k / 60.0;
+      // voMaxKm in seconds per km:
+      const v = (time3k / 3.0) * (-0.0528490338 * Math.log(h) + 1.10283947123919);
+
+      const raceTimes = STANDARD_DISTANCES.map(d => {
+        const predictedSec = this.predictTimeFrom3k(d.meters, time3k);
+        return {
+          id: d.id,
+          name: d.name,
+          meters: d.meters,
+          category: d.category,
+          timeSec: predictedSec,
+          paceSecPerKm: (predictedSec / d.meters) * 1000.0
+        };
+      });
+
+      // 13 Official Tinman Zones from Final Surge:
+      // Pace = v / (intensity ^ 0.7931)
+      const zones = [
+        { label: 'Recovery', low: 0.50, high: 0.55, purpose: 'Very gentle jog for active recovery between hard sessions' },
+        { label: 'Easy', low: 0.575, high: 0.625, purpose: 'Foundation aerobic base building, daily conversational miles' },
+        { label: 'Moderate', low: 0.65, high: 0.70, purpose: 'Aerobic threshold progression runs, steady endurance' },
+        { label: 'Tempo', low: 0.75, high: 0.80, purpose: 'Comfortably hard sustained tempo efforts' },
+        { label: 'MLSS / Threshold', low: 0.825, high: 0.855, purpose: 'Maximal Lactate Steady State (~60-min race pace, 15K-HM effort)' },
+        { label: '★ Critical Velocity (CV)', low: 0.875, high: 0.90, isHighlight: true, purpose: "Tinman's signature zone (~90% VO2max, 30-35 min pace): targets Type IIa muscle fibers with minimal fatigue" },
+        { label: 'Aerobic Power', low: 0.925, high: 0.955, purpose: 'Upper aerobic capacity & 5K-3K power' },
+        { label: 'VO2 max', low: 0.975, high: 1.00, purpose: 'Maximal oxygen uptake stimulation' },
+        { label: 'Mixed Zone', low: 1.05, high: 1.10, purpose: 'Anaerobic/aerobic transition repeats' },
+        { label: 'Anaerobic Capacity', low: 1.15, high: 1.20, purpose: 'Lactate tolerance and anaerobic buffering (e.g. 400m-600m)' },
+        { label: 'Anaerobic Power', low: 1.25, high: 1.30, purpose: 'Fast speed repetitions (200m-300m)' },
+        { label: 'Speed Endurance', low: 1.35, high: 1.40, purpose: 'Neuromuscular speed endurance' },
+        { label: 'Speed / Strides', low: 1.45, high: 1.50, purpose: 'Maximum sprint speed reserve and finishing kick' }
+      ];
+
+      const trainingPaces = zones.map(z => {
+        const pFast = v / Math.pow(z.high, 0.7931);
+        const pSlow = v / Math.pow(z.low, 0.7931);
+        const midPace = (pFast + pSlow) / 2.0;
+
+        return {
+          name: z.label,
+          intensity: `${Math.round(z.low * 100)}% - ${Math.round(z.high * 100)}% VO2max Anchor`,
+          purpose: z.purpose,
+          paceSecPerKmMin: pFast,
+          paceSecPerKmMax: pSlow,
+          paceSecPerKm: midPace,
+          singlePace: false,
+          isHighlight: z.isHighlight || false,
+          splits: {
+            '400m': Units.formatTime(midPace * 0.4),
+            '800m': Units.formatTime(midPace * 0.8),
+            '1000m': Units.formatTime(midPace * 1.0),
+            '1200m': Units.formatTime(midPace * 1.2),
+            '1mi': Units.formatTime(midPace * (Units.M_PER_MI / 1000))
+          }
+        };
+      });
+
+      const cvZone = trainingPaces.find(t => t.name.includes('Critical Velocity'));
+      const cvMidPace = cvZone ? cvZone.paceSecPerKm : (v / Math.pow(0.8875, 0.7931));
+      const tenkPred = this.predictTimeFrom3k(10000, time3k);
+
+      return {
+        id: this.id,
+        name: this.name,
+        sourceUrl: this.sourceUrl,
+        metricTitle: 'Tinman Critical Velocity (CV)',
+        metricValue: Units.formatPace(cvMidPace, false),
+        metricSub: `CV Range: ${Units.formatPace(cvZone.paceSecPerKmMin, false)} - ${Units.formatPace(cvZone.paceSecPerKmMax, false)} | 10K: ${Units.formatTime(tenkPred, true)}`,
+        raceTimes,
+        trainingPaces,
+        time3k,
+        voMaxKm: v,
+        cvPace: cvMidPace
+      };
+    }
+  };
+
+  /* ==========================================================================
+     4. LUKE HUMPHREY / HANSONS MARATHON METHOD (lukehumphreyrunning.com)
+     ========================================================================== */
+  const HansonsMethod = {
+    id: 'hansons',
+    name: 'Hansons Marathon Method',
+    sourceUrl: 'https://lukehumphreyrunning.com/hmmcalculator/race_equivalency_calculator.php',
+    description: "Luke Humphrey & Hansons-Brooks Distance Project. Uses exact Peter Riegel 1.06 equivalency and signature Strength Pace (MP - 10s/mile).",
+
+    // Luke Humphrey's official calculator uses pure Peter Riegel 1.06:
+    predictTime(distanceM, inputDistM, inputTimeSec) {
+      return inputTimeSec * Math.pow(distanceM / inputDistM, 1.06);
+    },
+
+    calculate(distanceM, timeSec) {
+      const raceTimes = STANDARD_DISTANCES.map(d => {
+        const predictedSec = this.predictTime(d.meters, distanceM, timeSec);
+        return {
+          id: d.id,
+          name: d.name,
+          meters: d.meters,
+          category: d.category,
+          timeSec: predictedSec,
+          paceSecPerKm: (predictedSec / d.meters) * 1000.0
+        };
+      });
+
+      const getDistTime = (targetM) => this.predictTime(targetM, distanceM, timeSec);
+      const paceFromM = (targetM) => (getDistTime(targetM) / targetM) * 1000.0;
+
+      const mpPace = paceFromM(42195);
+      const hmPace = paceFromM(21097.5);
+      const tenkPace = paceFromM(10000);
+      const fivekPace = paceFromM(5000);
+
+      // Hansons Exact Pacing Rules (anchored on Goal Marathon Pace):
+      // Strength Pace: Exactly MP - 10 sec/mile (-6.21 sec/km)!
+      const strengthPace = mpPace - 6.2137;
+      // Speed Pace: Exactly 5K race pace!
+      const speedPace = fivekPace;
+      // Easy Pace A (Relaxed): MP + 1:30 to 2:00 per mile (+56s to +75s/km)
+      // Easy Pace B (Standard): MP + 1:00 to 1:30 per mile (+37s to +56s/km)
+      // Moderate / Long Run: MP + 30 to 60 sec per mile (+19s to +37s/km)
+      // Recovery Pace: MP + 2:00 to 2:30 per mile (+75s to +93s/km)
+
+      const trainingPaces = [
+        {
+          name: 'Recovery Run',
+          intensity: 'MP + 2:00 to 2:30/mile (+75s to +93s/km)',
+          purpose: 'Active recovery on tired legs following hard SOS (Something of Substance) days',
+          paceSecPerKmMin: mpPace + 75,
+          paceSecPerKmMax: mpPace + 93,
+          singlePace: false
+        },
+        {
+          name: 'Easy Pace A (Relaxed)',
+          intensity: 'MP + 1:30 to 2:00/mile (+56s to +75s/km)',
+          purpose: 'Daily aerobic conditioning when cumulative fatigue is high',
+          paceSecPerKmMin: mpPace + 56,
+          paceSecPerKmMax: mpPace + 75,
+          singlePace: false
+        },
+        {
+          name: 'Easy Pace B (Standard)',
+          intensity: 'MP + 1:00 to 1:30/mile (+37s to +56s/km)',
+          purpose: 'Standard aerobic mileage runs when legs feel fresh',
+          paceSecPerKmMin: mpPace + 37,
+          paceSecPerKmMax: mpPace + 56,
+          singlePace: false
+        },
+        {
+          name: 'Moderate / Long Run Pace',
+          intensity: 'MP + 30 to 60s/mile (+19s to +37s/km)',
+          purpose: 'Hansons 16-mile weekend long run (aerobic endurance without excessive tissue breakdown)',
+          paceSecPerKmMin: mpPace + 19,
+          paceSecPerKmMax: mpPace + 37,
+          singlePace: false
+        },
+        {
+          name: 'Goal Marathon Pace (Tempo)',
+          intensity: 'Exact Goal Marathon Pace',
+          purpose: 'Hansons Thursday Marathon Tempo (progressing from 5 to 10 miles at marathon pace)',
+          paceSecPerKm: mpPace,
+          singlePace: true
+        },
+        {
+          name: '★ Hansons Strength Pace',
+          intensity: 'MP - 10 sec/mile (-6.2 sec/km)',
+          purpose: "Hansons signature lactate threshold workout (6x1mi, 3x2mi, or 2x3mi with 400m-800m jog recovery)",
+          paceSecPerKm: strengthPace,
+          singlePace: true,
+          isHighlight: true,
+          splits: {
+            '1000m': Units.formatTime(strengthPace * 1.0),
+            '1mi': Units.formatTime(strengthPace * (Units.M_PER_MI / 1000)),
+            '2mi': Units.formatTime(strengthPace * (Units.M_PER_MI / 1000) * 2),
+            '3mi': Units.formatTime(strengthPace * (Units.M_PER_MI / 1000) * 3)
+          }
+        },
+        {
+          name: 'Half Marathon Pace',
+          intensity: 'Predicted HM Race Pace',
+          purpose: 'Upper threshold / cruise training',
+          paceSecPerKm: hmPace,
+          singlePace: true
+        },
+        {
+          name: '10K Pace',
+          intensity: 'Predicted 10K Race Pace',
+          purpose: 'Lactate clearance intervals',
+          paceSecPerKm: tenkPace,
+          singlePace: true
+        },
+        {
+          name: '★ Hansons Speed Pace (5K)',
+          intensity: 'Predicted 5K Race Pace (~VO2 Max)',
+          purpose: 'Hansons early cycle Speed workouts (12x400m, 8x600m, 6x800m, 5x1000m with 400m recovery)',
+          paceSecPerKm: speedPace,
+          singlePace: true,
+          isHighlight: true,
+          splits: {
+            '400m': Units.formatTime(speedPace * 0.4),
+            '600m': Units.formatTime(speedPace * 0.6),
+            '800m': Units.formatTime(speedPace * 0.8),
+            '1000m': Units.formatTime(speedPace * 1.0)
+          }
+        }
+      ];
+
+      return {
+        id: this.id,
+        name: this.name,
+        sourceUrl: this.sourceUrl,
+        metricTitle: 'Hansons Strength Pace',
+        metricValue: Units.formatPace(strengthPace, false),
+        metricSub: `Marathon Pace: ${Units.formatPace(mpPace, false)} | Speed Pace (5K): ${Units.formatPace(speedPace, false)}`,
+        raceTimes,
+        trainingPaces
+      };
+    }
+  };
+
+  /* ==========================================================================
+     5. RUNNERSCALC (runnerscalc.com/pages/race-time-predictor)
+     Exact Peter Riegel 1.06 Script 8 Implementation
+     ========================================================================== */
+  const RunnersCalc = {
+    id: 'runnerscalc',
+    name: 'RunnersCalc (Riegel 1.06)',
+    sourceUrl: 'https://www.runnerscalc.com/pages/race-time-predictor',
+    description: "Exact implementation from runnerscalc.com Script 8: Riegel (1981) formula T2 = T1 * (D2 / D1)^1.06 on their standard 14 distance events.",
+
+    // Exact distances array extracted from runnerscalc.com Script 8:
+    officialDistances: [
+      { km: 1.0, name: '1km' },
+      { km: 1.609, name: '1mi' },
+      { km: 3.0, name: '3km' },
+      { km: 4.828032, name: '3mi' },
+      { km: 5.0, name: '5km' },
+      { km: 9.656064, name: '6mi' },
+      { km: 10.0, name: '10km' },
+      { km: 15.0, name: '15km' },
+      { km: 16.09344, name: '10mi' },
+      { km: 20.0, name: '20km' },
+      { km: 21.1, name: 'Half Marathon' },
+      { km: 42.2, name: 'Full Marathon' },
+      { km: 50.0, name: '50km' },
+      { km: 87.0, name: 'Comrades Marathon' }
+    ],
+
+    riegel(t1, d1_km, d2_km, exponent = 1.06) {
+      if (Math.abs(d1_km - d2_km) < 0.001) return t1;
+      return t1 * Math.pow(d2_km / d1_km, exponent);
+    },
+
+    // Dave Cameron (1998) non-linear formula
+    cameronF(m) {
+      return 13.49681 - 0.000030363 * m + 835.7114 / Math.pow(m, 0.7905);
+    },
+
+    cameron(t1, d1_m, d2_m) {
+      return t1 * (d2_m / d1_m) * (this.cameronF(d1_m) / this.cameronF(d2_m));
+    },
+
+    // Vickers & Vertosick (2016) mileage-adjusted formula
+    vickers(t1, d1_m, d2_m, weeklyMiles = 40) {
+      const cTarget = Math.max(1.05, Math.min(1.15, 1.15 - 0.001 * weeklyMiles));
+      const logRatio = Math.log(d2_m / d1_m) / Math.log(42195 / d1_m);
+      const kEff = d2_m > d1_m ? 1.06 * (1 - Math.max(0, logRatio)) + cTarget * Math.max(0, logRatio) : 1.055;
+      return t1 * Math.pow(d2_m / d1_m, kEff);
+    },
+
+    calculate(distanceM, timeSec, options = {}) {
+      const inputKm = distanceM / 1000.0;
+      const riegelExp = options.riegelExponent || 1.06;
+      const weeklyMiles = options.weeklyMiles || 40;
+
+      // Exact output matching runnerscalc.com Script 8:
+      const officialRows = this.officialDistances.map(d => {
+        const predSec = this.riegel(timeSec, inputKm, d.km, riegelExp);
+        const paceSecKm = predSec / d.km;
+        const paceSecMi = predSec / (d.km / 1.609);
+        return {
+          name: d.name,
+          km: d.km,
+          meters: d.km * 1000.0,
+          predictedTimeSec: predSec,
+          paceSecPerKm: paceSecKm,
+          paceSecPerMi: paceSecMi
+        };
+      });
+
+      // Standard distances array for cross-model comparability
+      const raceTimes = STANDARD_DISTANCES.map(d => {
+        const predRiegel = this.riegel(timeSec, inputKm, d.meters / 1000.0, riegelExp);
+        const predCameron = this.cameron(timeSec, distanceM, d.meters);
+        const predVickers = this.vickers(timeSec, distanceM, d.meters, weeklyMiles);
+
+        return {
+          id: d.id,
+          name: d.name,
+          meters: d.meters,
+          category: d.category,
+          timeSec: predRiegel, // Primary matches online runnerscalc.com!
+          paceSecPerKm: (predRiegel / d.meters) * 1000.0,
+          models: {
+            riegel: predRiegel,
+            cameron: predCameron,
+            vickers: predVickers
+          }
+        };
+      });
+
+      // Pete Pfitzinger Lactate Threshold as featured on runnerscalc.com:
+      // 5K pace + 10 to 15 sec/mile (+6 to +9 sec/km)
+      const fivekSec = this.riegel(timeSec, inputKm, 5.0, riegelExp);
+      const fivekPace = (fivekSec / 5.0); // sec/km
+      const hmSec = this.riegel(timeSec, inputKm, 21.1, riegelExp);
+      const hmPace = (hmSec / 21.1);
+      const mSec = this.riegel(timeSec, inputKm, 42.2, riegelExp);
+      const mPace = (mSec / 42.2);
+
+      const trainingPaces = [
+        {
+          name: 'Aerobic Base / Recovery',
+          intensity: '60% - 70% Max Effort',
+          purpose: 'Active regeneration, low stress aerobic conditioning',
+          paceSecPerKmMin: fivekPace * 1.30,
+          paceSecPerKmMax: fivekPace * 1.45,
+          singlePace: false
+        },
+        {
+          name: 'Aerobic Maintenance / Long',
+          intensity: '70% - 80% Max Effort',
+          purpose: 'Endurance foundation and long distance development',
+          paceSecPerKmMin: fivekPace * 1.20,
+          paceSecPerKmMax: fivekPace * 1.30,
+          singlePace: false
+        },
+        {
+          name: 'Full Marathon Race Pace',
+          intensity: 'Riegel Marathon Pace',
+          purpose: 'Specific marathon pace for race day execution',
+          paceSecPerKm: mPace,
+          singlePace: true
+        },
+        {
+          name: 'Pete Pfitzinger Lactate Threshold (LT)',
+          intensity: '5K Pace + 10-15s/mi (+6-9s/km) or HM Pace',
+          purpose: 'Lactate threshold tempo workouts featured on runnerscalc.com',
+          paceSecPerKmMin: fivekPace + 6,
+          paceSecPerKmMax: fivekPace + 9,
+          singlePace: false
+        },
+        {
+          name: 'VO2 Max Intervals',
+          intensity: '95% - 100% Max Effort (3K - 5K pace)',
+          purpose: 'Maximal oxygen consumption training',
+          paceSecPerKmMin: fivekPace - 5,
+          paceSecPerKmMax: fivekPace + 2,
+          singlePace: false
+        }
+      ];
+
+      return {
+        id: this.id,
+        name: this.name,
+        sourceUrl: this.sourceUrl,
+        metricTitle: 'Riegel 1.06 Marathon Prediction',
+        metricValue: Units.formatTime(mSec, true),
+        metricSub: `Half Marathon: ${Units.formatTime(hmSec, true)} | 10K: ${Units.formatTime(this.riegel(timeSec, inputKm, 10.0, riegelExp), true)}`,
+        raceTimes,
+        officialRows,
+        trainingPaces
+      };
+    }
+  };
+
+  /* ==========================================================================
+     6. 80/20 ENDURANCE (8020endurance.com/80-20-zone-calculator)
+     Exact Implementation from Next.js Chunk 5252 Table 'j'
+     ========================================================================== */
+  const EightyTwenty = {
+    id: 'eightytwenty',
+    name: '80/20 Endurance Zones',
+    sourceUrl: 'https://www.8020endurance.com/80-20-zone-calculator/',
+    description: "Exact implementation of 8020endurance.com JS chunk 5252. Running Threshold Pace (rTP) lookup table 'j' and official 7-zone speed boundaries.",
+
+    l: ["1", "2", "X", "3", "Y", "4", "5"],
+    o: {
+      percents: ["60-76", "76-87", "87-93", "93-100", "100-102", "102-115", ">115"],
+      bounds: [0.60, 0.76, 0.87, 0.93, 1.00, 1.02, 1.15]
+    },
+    j: {
+      "Recent Mile": {
+        above: 1.15,
+        bands: [[10, 1.153333333], [9, 1.157407407], [8, 1.1625], [7, 1.173809524], [6, 1.188888889], [5, 1.203333333]],
+        fallback: 1.22
+      },
+      "Recent 5K": {
+        above: 0.331,
+        bands: [[35, 0.332380952], [30, 0.333888889], [25, 0.337333333], [20, 0.345], [18, 0.346296296], [17, 0.348039216]],
+        fallback: 0.35
+      },
+      "Recent 10K": {
+        above: 0.16,
+        bands: [[60, 0.160833333], [55, 0.161818182], [50, 0.163], [45, 0.164814815], [40, 0.165833333], [35, 0.167142857], [30, 0.169444444]],
+        fallback: 0.17
+      },
+      "Recent 1/2 Marathon": {
+        above: 0.0715,
+        bands: [[165, 0.071717172], [150, 0.071888889], [135, 0.072098765], [120, 0.072916667], [105, 0.073492063], [90, 0.074444444], [75, 0.075333333]],
+        fallback: 0.076
+      },
+      "Recent Marathon": {
+        above: 0.034,
+        bands: [[300, 0.034222222], [285, 0.034269006], [270, 0.034382716], [255, 0.034509804], [240, 0.034722222], [225, 0.034962963], [210, 0.03515873], [195, 0.035384615], [180, 0.035555556], [165, 0.035656566], [150, 0.035777778], [135, 0.036049383]],
+        fallback: 0.037
+      }
+    },
+
+    getFactor(itemKey, durationMin) {
+      const t = this.j[itemKey];
+      if (!t) return 0.345;
+      if (durationMin > t.bands[0][0]) return t.above;
+      for (let i = 0; i < t.bands.length; i++) {
+        const threshold = t.bands[i][0];
+        const nextThreshold = i + 1 < t.bands.length ? t.bands[i + 1][0] : -Infinity;
+        if (durationMin > nextThreshold && durationMin <= threshold) {
+          return t.bands[i][1];
+        }
+      }
+      return t.fallback;
+    },
+
+    deriveThresholdPace(distanceM, timeSec) {
+      const totalMin = timeSec / 60.0;
+      let rtpMinPerMile;
+
+      // Exact matching to 8020endurance.com race methods:
+      if (Math.abs(distanceM - 1609.344) < 100) {
+        // Recent Mile
+        const factor = this.getFactor('Recent Mile', totalMin);
+        rtpMinPerMile = totalMin * factor;
+      } else if (Math.abs(distanceM - 5000) < 300) {
+        // Recent 5K
+        const factor = this.getFactor('Recent 5K', totalMin);
+        rtpMinPerMile = totalMin * factor;
+      } else if (Math.abs(distanceM - 10000) < 500) {
+        // Recent 10K
+        const factor = this.getFactor('Recent 10K', totalMin);
+        rtpMinPerMile = totalMin * factor;
+      } else if (Math.abs(distanceM - 21097.5) < 1000) {
+        // Recent 1/2 Marathon
+        const factor = this.getFactor('Recent 1/2 Marathon', totalMin);
+        rtpMinPerMile = totalMin * factor;
+      } else if (Math.abs(distanceM - 42195) < 2000) {
+        // Recent Marathon
+        const factor = this.getFactor('Recent Marathon', totalMin);
+        rtpMinPerMile = totalMin * factor;
+      } else {
+        // Any other arbitrary distance: convert to 5K equivalent via Riegel 1.06, then use Recent 5K
+        const equiv5kSec = timeSec * Math.pow(5000 / distanceM, 1.06);
+        const factor = this.getFactor('Recent 5K', equiv5kSec / 60.0);
+        rtpMinPerMile = (equiv5kSec / 60.0) * factor;
+      }
+
+      const rtpSecPerMile = rtpMinPerMile * 60.0;
+      const rtpSecPerKm = rtpSecPerMile / 1.60934;
+      return { rtpSecPerMile, rtpSecPerKm };
+    },
+
+    calculate(distanceM, timeSec) {
+      const { rtpSecPerMile, rtpSecPerKm } = this.deriveThresholdPace(distanceM, timeSec);
+
+      // Equivalent race times
+      const raceTimes = STANDARD_DISTANCES.map(d => {
+        const predSec = timeSec * Math.pow(d.meters / distanceM, 1.06);
+        return {
+          id: d.id,
+          name: d.name,
+          meters: d.meters,
+          category: d.category,
+          timeSec: predSec,
+          paceSecPerKm: (predSec / d.meters) * 1000.0
+        };
+      });
+
+      // 80/20 Official 7-Zone Calculation matching Chunk 5252:
+      // m(s, bound) => pace / bound
+      // low = h(m(s, bounds[n+1])) (faster pace)
+      // high = h(m(s, bounds[n])) (slower pace)
+      const bounds = this.o.bounds;
+      const percents = this.o.percents;
+
+      const zoneData = this.l.map((zone, n) => {
+        const pct = percents[n];
+        let pKmMin, pKmMax, pMiMin, pMiMax;
+
+        if (n < bounds.length - 1) {
+          pKmMin = rtpSecPerKm / bounds[n + 1]; // faster bound
+          pKmMax = rtpSecPerKm / bounds[n];     // slower bound
+          pMiMin = rtpSecPerMile / bounds[n + 1];
+          pMiMax = rtpSecPerMile / bounds[n];
+        } else {
+          // Zone 5 (>115%)
+          pKmMin = (rtpSecPerKm / bounds[n]) * 0.85;
+          pKmMax = rtpSecPerKm / bounds[n];
+          pMiMin = (rtpSecPerMile / bounds[n]) * 0.85;
+          pMiMax = rtpSecPerMile / bounds[n];
+        }
+
+        let bucket = '80% Low Intensity';
+        let bucketClass = 'badge-easy';
+        let purpose = '';
+
+        if (zone === '1') {
+          purpose = 'Active recovery and warm-ups. Very low mechanical and cardiac strain.';
+        } else if (zone === '2') {
+          purpose = 'Foundation aerobic base. Conversational conversational endurance (where 80% of training occurs).';
+        } else if (zone === 'X') {
+          bucket = 'Avoid / Gray Zone';
+          bucketClass = 'badge-warning';
+          purpose = 'The moderate gray zone. Too fast for recovery, too slow for high fitness gains. 80/20 plans avoid this!';
+        } else if (zone === '3') {
+          bucket = 'Moderate Intensity';
+          bucketClass = 'badge-moderate';
+          purpose = 'Tempo and comfortably hard running. Improves sustained lactate tolerance.';
+        } else if (zone === 'Y') {
+          bucket = 'Avoid / Buffer';
+          bucketClass = 'badge-warning';
+          purpose = 'Transition buffer between lactate threshold and high-intensity VO2max work.';
+        } else if (zone === '4') {
+          bucket = '20% High Intensity';
+          bucketClass = 'badge-hard';
+          purpose = 'VO2max power intervals. Expands maximum oxygen consumption rate.';
+        } else if (zone === '5') {
+          bucket = '20% High Intensity';
+          bucketClass = 'badge-hard';
+          purpose = 'Anaerobic sprints and short repetitions for neuromuscular speed reserve.';
+        }
+
+        return {
+          zoneNumber: zone,
+          name: `Zone ${zone}`,
+          intensity: `${pct}% Threshold Speed`,
+          bucket,
+          bucketClass,
+          purpose,
+          paceSecPerKmMin: pKmMin,
+          paceSecPerKmMax: pKmMax,
+          paceSecPerMiMin: pMiMin,
+          paceSecPerMiMax: pMiMax,
+          singlePace: false
+        };
+      });
+
+      return {
+        id: this.id,
+        name: this.name,
+        sourceUrl: this.sourceUrl,
+        metricTitle: 'Running Threshold Pace (rTP)',
+        metricValue: Units.formatPace(rtpSecPerKm, false),
+        metricSub: `Imperial: ${Units.formatPace(rtpSecPerKm, true)} | Zone 2: ${Units.formatPace(zoneData[1].paceSecPerKmMin, false)} - ${Units.formatPace(zoneData[1].paceSecPerKmMax, false)}`,
+        raceTimes,
+        trainingPaces: zoneData,
+        rtpSecPerKm,
+        rtpSecPerMile
+      };
+    }
+  };
+
+  /* ==========================================================================
+     7. ADDITIONAL CLASSIC CALCULATORS (Pfitzinger, Galloway, Horwill)
+     ========================================================================== */
+  const AdditionalCalculators = {
+    id: 'additional',
+    name: 'Pfitzinger, Galloway & Horwill',
+    sourceUrl: 'https://runnerscalc.com',
+    description: "Classic marathon coaching: Pete Pfitzinger (Advanced Marathoning), Jeff Galloway (Magic Mile & Run-Walk), and Frank Horwill (BMC 4-Second Rule).",
+
+    calculate(distanceM, timeSec) {
+      const pred = (targetM) => timeSec * Math.pow(targetM / distanceM, 1.06);
+      const paceFromM = (targetM) => (pred(targetM) / targetM) * 1000.0;
+
+      const fivekPace = paceFromM(5000);
+      const tenkPace = paceFromM(10000);
+      const hmPace = paceFromM(21097.5);
+      const mPace = paceFromM(42195);
+
+      // Pete Pfitzinger Paces:
+      const pfitzPaces = [
+        {
+          name: 'Pfitz Recovery',
+          intensity: '< 76% HRmax (< 70% HRR, MP + 1:30 to 2:15/mi)',
+          purpose: 'Stimulates blood flow to accelerate muscular recovery',
+          paceSecPerKmMin: mPace + 56,
+          paceSecPerKmMax: mPace + 84,
+          singlePace: false
+        },
+        {
+          name: 'Pfitz General Aerobic (GA)',
+          intensity: '70% - 81% HRmax (62% - 75% HRR, MP + 1:10 to 1:45/mi)',
+          purpose: 'Standard aerobic conditioning building weekly mileage',
+          paceSecPerKmMin: mPace + 43,
+          paceSecPerKmMax: mPace + 65,
+          singlePace: false
+        },
+        {
+          name: 'Pfitz Endurance (Long Run)',
+          intensity: '74% - 84% HRmax (65% - 78% HRR, MP + 20s to 45s/mi)',
+          purpose: 'Weekend long run starting GA pace and finishing strong',
+          paceSecPerKmMin: mPace + 12,
+          paceSecPerKmMax: mPace + 28,
+          singlePace: false
+        },
+        {
+          name: 'Pfitz Marathon Pace (MP)',
+          intensity: '82% - 88% HRmax (73% - 84% HRR)',
+          purpose: 'Marathon pace rehearsals within long runs',
+          paceSecPerKm: mPace,
+          singlePace: true
+        },
+        {
+          name: 'Pfitz Lactate Threshold (LT)',
+          intensity: '82% - 91% HRmax (15K to Half Marathon race pace)',
+          purpose: '4 to 7 mile continuous tempo runs or cruise intervals',
+          paceSecPerKmMin: hmPace - 3,
+          paceSecPerKmMax: hmPace + 4,
+          singlePace: false
+        },
+        {
+          name: 'Pfitz VO2 Max (Intervals)',
+          intensity: '93% - 98% HRmax (3K to 5K race pace)',
+          purpose: '800m - 1600m repeats with 50-90% jog recovery time',
+          paceSecPerKmMin: fivekPace - 5,
+          paceSecPerKmMax: fivekPace + 2,
+          singlePace: false
+        }
+      ];
+
+      // Jeff Galloway Magic Mile:
+      const mmPace = Math.max(120, fivekPace - 20.5); // 5k pace - 33s/mi
+      const gallowayPaces = [
+        { name: 'Magic Mile (MM) Baseline', intensity: '1-Mile Time Trial Pace', purpose: 'Anchor for all Galloway predictions', paceSecPerKm: mmPace, singlePace: true },
+        { name: '5K Race Pace', intensity: 'MM + 33s/mi (+20.5s/km)', purpose: 'Goal 5K pace with walk breaks', paceSecPerKm: mmPace + 20.5, singlePace: true },
+        { name: '10K Race Pace', intensity: 'MM x 1.15', purpose: 'Goal 10K pace with walk breaks', paceSecPerKm: mmPace * 1.15, singlePace: true },
+        { name: 'Half Marathon Pace', intensity: 'MM x 1.20', purpose: 'Goal HM pace with walk breaks', paceSecPerKm: mmPace * 1.20, singlePace: true },
+        { name: 'Marathon Race Pace', intensity: 'MM x 1.30', purpose: 'Goal Marathon pace with run-walk intervals', paceSecPerKm: mmPace * 1.30, singlePace: true },
+        { name: 'Long Run Training Pace', intensity: 'Marathon Pace + 2:00/mi (+75s/km)', purpose: 'Ultra-gentle long run pace', paceSecPerKm: (mmPace * 1.30) + 75, singlePace: true }
+      ];
+
+      // Frank Horwill BMC 4-Second Rule:
+      const horwillPaces = [
+        { name: '400m Sprint Pace', paceSecPerKm: Math.max(100, fivekPace - 40) },
+        { name: '800m Pace', paceSecPerKm: Math.max(120, fivekPace - 30) },
+        { name: '1500m / Mile Pace', paceSecPerKm: Math.max(140, fivekPace - 20) },
+        { name: '3000m Pace', paceSecPerKm: fivekPace - 10 },
+        { name: '5000m Pace (Anchor)', paceSecPerKm: fivekPace },
+        { name: '10,000m Pace', paceSecPerKm: fivekPace + 10 },
+        { name: 'Half Marathon Pace', paceSecPerKm: fivekPace + 20 },
+        { name: 'Marathon Pace', paceSecPerKm: fivekPace + 30 }
+      ];
+
+      const raceTimes = STANDARD_DISTANCES.map(d => {
+        const tSec = pred(d.meters);
+        return {
+          id: d.id,
+          name: d.name,
+          meters: d.meters,
+          category: d.category,
+          timeSec: tSec,
+          paceSecPerKm: (tSec / d.meters) * 1000.0
+        };
+      });
+
+      return {
+        id: this.id,
+        name: this.name,
+        sourceUrl: this.sourceUrl,
+        metricTitle: 'Pfitz LT Pace',
+        metricValue: Units.formatPace(hmPace, false),
+        metricSub: `Galloway MM: ${Units.formatPace(mmPace, false)} | Marathon: ${Units.formatPace(mPace, false)}`,
+        raceTimes,
+        trainingPaces: pfitzPaces,
+        gallowayPaces,
+        horwillPaces
+      };
+    }
+  };
+
+  /* ==========================================================================
+     8. OVERALL COMPARISON & STATISTICAL ANALYSIS ENGINE
+     ========================================================================== */
+  const ComparisonEngine = {
+    comparisonDistances: [
+      { id: '1500m', name: '1500m', meters: 1500 },
+      { id: '1mi', name: '1 Mile', meters: 1609.344 },
+      { id: '3000m', name: '3000m', meters: 3000 },
+      { id: '5k', name: '5K', meters: 5000 },
+      { id: '8k', name: '8K', meters: 8000 },
+      { id: '10k', name: '10K', meters: 10000 },
+      { id: '15k', name: '15K', meters: 15000 },
+      { id: '10mi', name: '10 Miles', meters: 16093.44 },
+      { id: 'half', name: 'Half Marathon', meters: 21097.5 },
+      { id: 'marathon', name: 'Marathon', meters: 42195 },
+      { id: '50k', name: '50K Ultra', meters: 50000 }
+    ],
+
+    trainingPaceCategories: [
+      { id: 'recovery', name: 'Recovery / Active Recovery', description: 'Very easy jog for post-workout regeneration' },
+      { id: 'easy', name: 'Easy / Foundation / Aerobic Base', description: 'Core conversational mileage' },
+      { id: 'long', name: 'Long Run / Endurance Progression', description: 'Weekend long distance runs' },
+      { id: 'marathon', name: 'Marathon Pace (MP)', description: 'Sustained marathon race pace' },
+      { id: 'threshold', name: 'Lactate Threshold / Tempo (LT)', description: 'Cruising speed at lactate steady state (~60-min race pace, 15K-HM effort)' },
+      { id: 'cv', name: '★ Critical Velocity (CV)', description: 'Optimal pace for Type IIa intermediate muscle fibers (~30-35 min race effort, ~90-92% VO2max)' },
+      { id: 'interval', name: 'Interval / VO2 Max', description: 'High aerobic power intervals (3K - 5K race pace)' },
+      { id: 'speed', name: 'Repetition / Speed Reserve / Sprint', description: 'Neuromuscular speed (800m - 1500m pace)' }
+    ],
+
+    analyze(resultsMap) {
+      const raceComparison = this.comparisonDistances.map(dist => {
+        const rows = [];
+        const validValues = [];
+
+        for (const [calcId, result] of Object.entries(resultsMap)) {
+          if (!result || !result.raceTimes) continue;
+          const match = result.raceTimes.find(r => r.meters === dist.meters || r.id === dist.id);
+          if (match && Number.isFinite(match.timeSec) && match.timeSec > 0) {
+            rows.push({
+              calcId,
+              calcName: result.name,
+              timeSec: match.timeSec,
+              paceSecPerKm: match.paceSecPerKm
+            });
+            validValues.push(match.timeSec);
+          }
+        }
+
+        if (validValues.length === 0) return null;
+
+        const minTime = Math.min(...validValues);
+        const maxTime = Math.max(...validValues);
+        const sumTime = validValues.reduce((a, b) => a + b, 0);
+        const avgTime = sumTime / validValues.length;
+        const spreadSec = maxTime - minTime;
+
+        const fastestRow = rows.find(r => Math.abs(r.timeSec - minTime) < 0.01);
+        const slowestRow = rows.find(r => Math.abs(r.timeSec - maxTime) < 0.01);
+
+        return {
+          id: dist.id,
+          name: dist.name,
+          meters: dist.meters,
+          minTimeSec: minTime,
+          maxTimeSec: maxTime,
+          avgTimeSec: avgTime,
+          spreadSec: spreadSec,
+          spreadPercent: ((spreadSec / avgTime) * 100).toFixed(1),
+          fastestCalc: fastestRow ? fastestRow.calcName : '',
+          slowestCalc: slowestRow ? slowestRow.calcName : '',
+          entries: rows
+        };
+      }).filter(Boolean);
+
+      const extractedPaces = {};
+      for (const [calcId, result] of Object.entries(resultsMap)) {
+        extractedPaces[calcId] = this.extractNormalizedPaces(calcId, result);
+      }
+
+      const paceComparison = this.trainingPaceCategories.map(cat => {
+        const rows = [];
+        const validPaces = [];
+
+        for (const [calcId, paces] of Object.entries(extractedPaces)) {
+          const p = paces[cat.id];
+          if (p && Number.isFinite(p.midSecPerKm) && p.midSecPerKm > 0) {
+            rows.push({
+              calcId,
+              calcName: resultsMap[calcId].name,
+              minSecPerKm: p.minSecPerKm,
+              maxSecPerKm: p.maxSecPerKm,
+              midSecPerKm: p.midSecPerKm,
+              label: p.label
+            });
+            validPaces.push(p.midSecPerKm);
+          }
+        }
+
+        if (validPaces.length === 0) return null;
+
+        const minPace = Math.min(...validPaces); // fastest speed
+        const maxPace = Math.max(...validPaces); // slowest speed
+        const avgPace = validPaces.reduce((a, b) => a + b, 0) / validPaces.length;
+        const spreadPace = maxPace - minPace;
+
+        const fastestRow = rows.find(r => Math.abs(r.midSecPerKm - minPace) < 0.01);
+        const slowestRow = rows.find(r => Math.abs(r.midSecPerKm - maxPace) < 0.01);
+
+        return {
+          id: cat.id,
+          name: cat.name,
+          description: cat.description,
+          fastestPaceSec: minPace,
+          slowestPaceSec: maxPace,
+          avgPaceSec: avgPace,
+          spreadSec: spreadPace,
+          fastestCalc: fastestRow ? fastestRow.calcName : '',
+          slowestCalc: slowestRow ? slowestRow.calcName : '',
+          entries: rows
+        };
+      }).filter(Boolean);
+
+      const insights = this.generateInsights(raceComparison, paceComparison);
+
+      return {
+        raceComparison,
+        paceComparison,
+        insights
+      };
+    },
+
+    extractNormalizedPaces(calcId, result) {
+      const p = {};
+      const tp = result.trainingPaces || [];
+
+      if (calcId === 'daniels') {
+        const e = tp.find(t => t.name.includes('Easy'));
+        const m = tp.find(t => t.name.includes('Marathon'));
+        const t = tp.find(t => t.name.includes('Threshold'));
+        const i = tp.find(t => t.name.includes('Interval'));
+        const r = tp.find(t => t.name.includes('Repetition'));
+
+        if (e) {
+          p.recovery = { minSecPerKm: e.paceSecPerKmMax, maxSecPerKm: e.paceSecPerKmMax + 20, midSecPerKm: e.paceSecPerKmMax + 10, label: 'Daniels Easy Low' };
+          p.easy = { minSecPerKm: e.paceSecPerKmMin, maxSecPerKm: e.paceSecPerKmMax, midSecPerKm: (e.paceSecPerKmMin + e.paceSecPerKmMax) / 2, label: 'Daniels Easy (E)' };
+          p.long = { minSecPerKm: e.paceSecPerKmMin, maxSecPerKm: e.paceSecPerKmMax, midSecPerKm: (e.paceSecPerKmMin + e.paceSecPerKmMax) / 2, label: 'Daniels Long (L)' };
+        }
+        if (m) p.marathon = { minSecPerKm: m.paceSecPerKm, maxSecPerKm: m.paceSecPerKm, midSecPerKm: m.paceSecPerKm, label: 'Daniels Marathon (M)' };
+        if (t) p.threshold = { minSecPerKm: t.paceSecPerKm, maxSecPerKm: t.paceSecPerKm, midSecPerKm: t.paceSecPerKm, label: 'Daniels Threshold (T)' };
+        if (t && i) {
+          // Critical Velocity sits at 91.5% VDOT velocity (between Threshold ~88% and Interval 98-100%)
+          const cvPace = t.paceSecPerKm - (t.paceSecPerKm - i.paceSecPerKm) * 0.44;
+          p.cv = { minSecPerKm: cvPace * 0.99, maxSecPerKm: cvPace * 1.01, midSecPerKm: cvPace, label: 'Daniels ~91.5% VDOT' };
+        }
+        if (i) p.interval = { minSecPerKm: i.paceSecPerKm, maxSecPerKm: i.paceSecPerKm, midSecPerKm: i.paceSecPerKm, label: 'Daniels Interval (I)' };
+        if (r) p.speed = { minSecPerKm: r.paceSecPerKm, maxSecPerKm: r.paceSecPerKm, midSecPerKm: r.paceSecPerKm, label: 'Daniels Repetition (R)' };
+      } else if (calcId === 'mcmillan') {
+        const rec = tp.find(t => t.name.includes('Recovery'));
+        const easy = tp.find(t => t.name.includes('Easy Runs'));
+        const longR = tp.find(t => t.name.includes('Long Runs'));
+        const steady = tp.find(t => t.name.includes('Steady-State'));
+        const tempo = tp.find(t => t.name.includes('Tempo Runs'));
+        const cv = tp.find(t => t.name.includes('Critical Velocity') || t.name.includes('CV'));
+        const speed = tp.find(t => t.name.includes('Speed Work (Intervals)'));
+        const sprint = tp.find(t => t.name.includes('Speed Work (Repetitions)'));
+
+        if (rec) p.recovery = { minSecPerKm: rec.paceSecPerKmMin, maxSecPerKm: rec.paceSecPerKmMax, midSecPerKm: (rec.paceSecPerKmMin + rec.paceSecPerKmMax) / 2, label: 'McMillan Recovery Jogs' };
+        if (easy) p.easy = { minSecPerKm: easy.paceSecPerKmMin, maxSecPerKm: easy.paceSecPerKmMax, midSecPerKm: (easy.paceSecPerKmMin + easy.paceSecPerKmMax) / 2, label: 'McMillan Easy Runs' };
+        if (longR) p.long = { minSecPerKm: longR.paceSecPerKmMin, maxSecPerKm: longR.paceSecPerKmMax, midSecPerKm: (longR.paceSecPerKmMin + longR.paceSecPerKmMax) / 2, label: 'McMillan Long Runs' };
+        if (steady) p.marathon = { minSecPerKm: steady.paceSecPerKmMin, maxSecPerKm: steady.paceSecPerKmMax, midSecPerKm: (steady.paceSecPerKmMin + steady.paceSecPerKmMax) / 2, label: 'McMillan Steady State' };
+        if (tempo || result.vltPace) {
+          const tPace = result.vltPace || ((tempo.paceSecPerKmMin + tempo.paceSecPerKmMax) / 2);
+          p.threshold = { minSecPerKm: tempo ? tempo.paceSecPerKmMin : tPace, maxSecPerKm: tempo ? tempo.paceSecPerKmMax : tPace, midSecPerKm: tPace, label: 'McMillan Tempo (vLT)' };
+        }
+        if (cv || result.cvPace) {
+          const cvPace = result.cvPace || cv.paceSecPerKm;
+          p.cv = { minSecPerKm: cvPace, maxSecPerKm: cvPace, midSecPerKm: cvPace, label: 'McMillan Official CV (1.021x 5K)' };
+        }
+        if (speed || result.vvo2Pace) {
+          const sPace = result.vvo2Pace || ((speed.paceSecPerKmMin + speed.paceSecPerKmMax) / 2);
+          p.interval = { minSecPerKm: speed ? speed.paceSecPerKmMin : sPace, maxSecPerKm: speed ? speed.paceSecPerKmMax : sPace, midSecPerKm: sPace, label: 'McMillan Speed Work' };
+        }
+        if (sprint) p.speed = { minSecPerKm: sprint.paceSecPerKmMin, maxSecPerKm: sprint.paceSecPerKmMax, midSecPerKm: (sprint.paceSecPerKmMin + sprint.paceSecPerKmMax) / 2, label: 'McMillan Repetitions' };
+      } else if (calcId === 'tinman') {
+        const rec = tp.find(t => t.name === 'Recovery');
+        const easy = tp.find(t => t.name === 'Easy');
+        const mod = tp.find(t => t.name === 'Moderate');
+        const tempo = tp.find(t => t.name === 'Tempo');
+        const mlss = tp.find(t => t.name.includes('MLSS') || t.name.includes('Threshold'));
+        const cv = tp.find(t => t.name.includes('Critical Velocity') || t.name === 'CV');
+        const aer = tp.find(t => t.name === 'Aerobic Power');
+        const vo2 = tp.find(t => t.name.includes('VO2 max') || t.name === 'Aerobic Power');
+        const spd = tp.find(t => t.name.includes('Anaerobic Power') || t.name.includes('Speed'));
+
+        if (rec) p.recovery = { minSecPerKm: rec.paceSecPerKmMin, maxSecPerKm: rec.paceSecPerKmMax, midSecPerKm: rec.paceSecPerKm, label: 'Tinman Recovery (50-55%)' };
+        if (easy) p.easy = { minSecPerKm: easy.paceSecPerKmMin, maxSecPerKm: easy.paceSecPerKmMax, midSecPerKm: easy.paceSecPerKm, label: 'Tinman Easy (57.5-62.5%)' };
+        if (mod) p.long = { minSecPerKm: mod.paceSecPerKmMin, maxSecPerKm: mod.paceSecPerKmMax, midSecPerKm: mod.paceSecPerKm, label: 'Tinman Moderate (65-70%)' };
+        if (tempo) p.marathon = { minSecPerKm: tempo.paceSecPerKmMin, maxSecPerKm: tempo.paceSecPerKmMax, midSecPerKm: tempo.paceSecPerKm, label: 'Tinman Tempo (75-80%)' };
+        if (mlss) p.threshold = { minSecPerKm: mlss.paceSecPerKmMin, maxSecPerKm: mlss.paceSecPerKmMax, midSecPerKm: mlss.paceSecPerKm, label: 'Tinman MLSS / Threshold (82.5-85.5%)' };
+        if (cv) p.cv = { minSecPerKm: cv.paceSecPerKmMin, maxSecPerKm: cv.paceSecPerKmMax, midSecPerKm: cv.paceSecPerKm, label: 'Tinman Critical Velocity (87.5-90%)' };
+        if (vo2) p.interval = { minSecPerKm: vo2.paceSecPerKmMin, maxSecPerKm: vo2.paceSecPerKmMax, midSecPerKm: vo2.paceSecPerKm, label: 'Tinman VO2 max (97.5-100%)' };
+        if (spd) p.speed = { minSecPerKm: spd.paceSecPerKmMin, maxSecPerKm: spd.paceSecPerKmMax, midSecPerKm: spd.paceSecPerKm, label: 'Tinman Anaerobic Power / Speed' };
+      } else if (calcId === 'hansons') {
+        const rec = tp.find(t => t.name.includes('Recovery'));
+        const easyA = tp.find(t => t.name.includes('Easy Pace A'));
+        const mod = tp.find(t => t.name.includes('Moderate / Long'));
+        const mp = tp.find(t => t.name.includes('Goal Marathon Pace'));
+        const strength = tp.find(t => t.name.includes('Strength'));
+        const speed = tp.find(t => t.name.includes('Speed Pace') || t.name.includes('Speed'));
+
+        if (rec) p.recovery = { minSecPerKm: rec.paceSecPerKmMin, maxSecPerKm: rec.paceSecPerKmMax, midSecPerKm: (rec.paceSecPerKmMin + rec.paceSecPerKmMax) / 2, label: 'Hansons Recovery' };
+        if (easyA) p.easy = { minSecPerKm: easyA.paceSecPerKmMin, maxSecPerKm: easyA.paceSecPerKmMax, midSecPerKm: (easyA.paceSecPerKmMin + easyA.paceSecPerKmMax) / 2, label: 'Hansons Easy Pace A' };
+        if (mod) p.long = { minSecPerKm: mod.paceSecPerKmMin, maxSecPerKm: mod.paceSecPerKmMax, midSecPerKm: (mod.paceSecPerKmMin + mod.paceSecPerKmMax) / 2, label: 'Hansons Moderate Long' };
+        if (mp) p.marathon = { minSecPerKm: mp.paceSecPerKm, maxSecPerKm: mp.paceSecPerKm, midSecPerKm: mp.paceSecPerKm, label: 'Hansons Goal MP' };
+        if (strength) p.threshold = { minSecPerKm: strength.paceSecPerKm, maxSecPerKm: strength.paceSecPerKm, midSecPerKm: strength.paceSecPerKm, label: 'Hansons Strength (MP - 10s)' };
+        const tenk = result.raceTimes.find(r => r.id === '10k');
+        if (tenk) {
+          const cvPace = tenk.paceSecPerKm;
+          p.cv = { minSecPerKm: cvPace - 2, maxSecPerKm: cvPace + 4, midSecPerKm: cvPace + 1, label: 'Hansons 10K / Sub-Threshold' };
+        }
+        if (speed) p.interval = { minSecPerKm: speed.paceSecPerKm, maxSecPerKm: speed.paceSecPerKm, midSecPerKm: speed.paceSecPerKm, label: 'Hansons Speed (5K)' };
+        p.speed = { minSecPerKm: speed ? speed.paceSecPerKm * 0.92 : 0, maxSecPerKm: speed ? speed.paceSecPerKm : 0, midSecPerKm: speed ? speed.paceSecPerKm * 0.95 : 0, label: 'Hansons Anaerobic' };
+      } else if (calcId === 'eightytwenty') {
+        const z1 = tp.find(t => t.zoneNumber === '1');
+        const z2 = tp.find(t => t.zoneNumber === '2');
+        const z3 = tp.find(t => t.zoneNumber === '3');
+        const zY = tp.find(t => t.zoneNumber === 'Y');
+        const z4 = tp.find(t => t.zoneNumber === '4');
+        const z5 = tp.find(t => t.zoneNumber === '5');
+
+        if (z1) p.recovery = { minSecPerKm: z1.paceSecPerKmMin, maxSecPerKm: z1.paceSecPerKmMax, midSecPerKm: (z1.paceSecPerKmMin + z1.paceSecPerKmMax) / 2, label: '80/20 Zone 1 (Recovery)' };
+        if (z2) p.easy = { minSecPerKm: z2.paceSecPerKmMin, maxSecPerKm: z2.paceSecPerKmMax, midSecPerKm: (z2.paceSecPerKmMin + z2.paceSecPerKmMax) / 2, label: '80/20 Zone 2 (Foundation)' };
+        if (z2) p.long = { minSecPerKm: z2.paceSecPerKmMin, maxSecPerKm: z2.paceSecPerKmMax, midSecPerKm: (z2.paceSecPerKmMin + z2.paceSecPerKmMax) / 2, label: '80/20 Zone 2 (Long)' };
+        if (z3) p.marathon = { minSecPerKm: z3.paceSecPerKmMin, maxSecPerKm: z3.paceSecPerKmMax, midSecPerKm: (z3.paceSecPerKmMin + z3.paceSecPerKmMax) / 2, label: '80/20 Zone 3 (Tempo)' };
+        p.threshold = { minSecPerKm: result.rtpSecPerKm, maxSecPerKm: result.rtpSecPerKm, midSecPerKm: result.rtpSecPerKm, label: '80/20 rTP (Threshold)' };
+        if (zY) {
+          p.cv = { minSecPerKm: zY.paceSecPerKmMin, maxSecPerKm: zY.paceSecPerKmMax, midSecPerKm: (zY.paceSecPerKmMin + zY.paceSecPerKmMax) / 2, label: '80/20 Zone Y (Threshold Buffer)' };
+        }
+        if (z4) p.interval = { minSecPerKm: z4.paceSecPerKmMin, maxSecPerKm: z4.paceSecPerKmMax, midSecPerKm: (z4.paceSecPerKmMin + z4.paceSecPerKmMax) / 2, label: '80/20 Zone 4 (VO2)' };
+        if (z5) p.speed = { minSecPerKm: z5.paceSecPerKmMin, maxSecPerKm: z5.paceSecPerKmMax, midSecPerKm: (z5.paceSecPerKmMin + z5.paceSecPerKmMax) / 2, label: '80/20 Zone 5 (Anaerobic)' };
+      } else if (calcId === 'runnerscalc') {
+        const base = tp.find(t => t.name.includes('Aerobic Base'));
+        const maint = tp.find(t => t.name.includes('Maintenance'));
+        const mp = tp.find(t => t.name.includes('Marathon'));
+        const lt = tp.find(t => t.name.includes('Threshold'));
+        const vo2 = tp.find(t => t.name.includes('VO2 Max'));
+
+        if (base) p.recovery = { minSecPerKm: base.paceSecPerKmMin, maxSecPerKm: base.paceSecPerKmMax, midSecPerKm: (base.paceSecPerKmMin + base.paceSecPerKmMax) / 2, label: 'RunnersCalc Base / Recovery' };
+        if (maint) p.easy = { minSecPerKm: maint.paceSecPerKmMin, maxSecPerKm: maint.paceSecPerKmMax, midSecPerKm: (maint.paceSecPerKmMin + maint.paceSecPerKmMax) / 2, label: 'RunnersCalc Maintenance' };
+        if (maint) p.long = { minSecPerKm: maint.paceSecPerKmMin, maxSecPerKm: maint.paceSecPerKmMax, midSecPerKm: (maint.paceSecPerKmMin + maint.paceSecPerKmMax) / 2, label: 'RunnersCalc Long Run' };
+        if (mp) p.marathon = { minSecPerKm: mp.paceSecPerKm, maxSecPerKm: mp.paceSecPerKm, midSecPerKm: mp.paceSecPerKm, label: 'RunnersCalc Riegel Marathon' };
+        if (lt) p.threshold = { minSecPerKm: lt.paceSecPerKmMin, maxSecPerKm: lt.paceSecPerKmMax, midSecPerKm: (lt.paceSecPerKmMin + lt.paceSecPerKmMax) / 2, label: 'RunnersCalc Pfitz LT' };
+        const tenk = result.raceTimes ? result.raceTimes.find(r => r.id === '10k') : null;
+        if (tenk) {
+          p.cv = { minSecPerKm: tenk.paceSecPerKm - 2, maxSecPerKm: tenk.paceSecPerKm + 4, midSecPerKm: tenk.paceSecPerKm + 1, label: 'RunnersCalc 10K Effort' };
+        }
+        if (vo2) p.interval = { minSecPerKm: vo2.paceSecPerKmMin, maxSecPerKm: vo2.paceSecPerKmMax, midSecPerKm: (vo2.paceSecPerKmMin + vo2.paceSecPerKmMax) / 2, label: 'RunnersCalc VO2' };
+      } else if (calcId === 'additional') {
+        const rec = tp.find(t => t.name.includes('Recovery'));
+        const ga = tp.find(t => t.name.includes('General Aerobic'));
+        const end = tp.find(t => t.name.includes('Endurance'));
+        const mp = tp.find(t => t.name.includes('Marathon Pace'));
+        const lt = tp.find(t => t.name.includes('Lactate Threshold'));
+        const vo2 = tp.find(t => t.name.includes('VO2 Max'));
+
+        if (rec) p.recovery = { minSecPerKm: rec.paceSecPerKmMin, maxSecPerKm: rec.paceSecPerKmMax, midSecPerKm: (rec.paceSecPerKmMin + rec.paceSecPerKmMax) / 2, label: 'Pfitz Recovery' };
+        if (ga) p.easy = { minSecPerKm: ga.paceSecPerKmMin, maxSecPerKm: ga.paceSecPerKmMax, midSecPerKm: (ga.paceSecPerKmMin + ga.paceSecPerKmMax) / 2, label: 'Pfitz General Aerobic' };
+        if (end) p.long = { minSecPerKm: end.paceSecPerKmMin, maxSecPerKm: end.paceSecPerKmMax, midSecPerKm: (end.paceSecPerKmMin + end.paceSecPerKmMax) / 2, label: 'Pfitz Endurance Long' };
+        if (mp) p.marathon = { minSecPerKm: mp.paceSecPerKm, maxSecPerKm: mp.paceSecPerKm, midSecPerKm: mp.paceSecPerKm, label: 'Pfitz MP' };
+        if (lt) p.threshold = { minSecPerKm: lt.paceSecPerKmMin, maxSecPerKm: lt.paceSecPerKmMax, midSecPerKm: (lt.paceSecPerKmMin + lt.paceSecPerKmMax) / 2, label: 'Pfitz LT' };
+        const tenk = result.raceTimes ? result.raceTimes.find(r => r.id === '10k') : null;
+        if (tenk) {
+          p.cv = { minSecPerKm: tenk.paceSecPerKm - 2, maxSecPerKm: tenk.paceSecPerKm + 4, midSecPerKm: tenk.paceSecPerKm + 1, label: 'Horwill / Pfitz 10K Pace' };
+        }
+        if (vo2) p.interval = { minSecPerKm: vo2.paceSecPerKmMin, maxSecPerKm: vo2.paceSecPerKmMax, midSecPerKm: (vo2.paceSecPerKmMin + vo2.paceSecPerKmMax) / 2, label: 'Pfitz VO2 Max' };
+      }
+
+      return p;
+    },
+
+    generateInsights(raceComparison, paceComparison) {
+      const marathonComp = raceComparison.find(r => r.id === 'marathon');
+      const hmComp = raceComparison.find(r => r.id === 'half');
+      const thresholdComp = paceComparison.find(p => p.id === 'threshold');
+      const cvComp = paceComparison.find(p => p.id === 'cv');
+      const easyComp = paceComparison.find(p => p.id === 'easy');
+
+      return {
+        marathonSummary: marathonComp ? {
+          fastest: marathonComp.fastestCalc,
+          slowest: marathonComp.slowestCalc,
+          fastestTime: Units.formatTime(marathonComp.minTimeSec, true),
+          slowestTime: Units.formatTime(marathonComp.maxTimeSec, true),
+          avgTime: Units.formatTime(marathonComp.avgTimeSec, true),
+          spreadFormatted: Units.formatTime(marathonComp.spreadSec, false),
+          spreadSec: marathonComp.spreadSec
+        } : null,
+        hmSummary: hmComp ? {
+          fastest: hmComp.fastestCalc,
+          slowest: hmComp.slowestCalc,
+          fastestTime: Units.formatTime(hmComp.minTimeSec, true),
+          slowestTime: Units.formatTime(hmComp.maxTimeSec, true),
+          avgTime: Units.formatTime(hmComp.avgTimeSec, true)
+        } : null,
+        thresholdSummary: thresholdComp ? {
+          fastest: thresholdComp.fastestCalc,
+          slowest: thresholdComp.slowestCalc,
+          fastestPace: thresholdComp.fastestPaceSec,
+          slowestPace: thresholdComp.slowestPaceSec,
+          avgPace: thresholdComp.avgPaceSec,
+          spreadSec: thresholdComp.spreadSec
+        } : null,
+        cvSummary: cvComp ? {
+          fastest: cvComp.fastestCalc,
+          slowest: cvComp.slowestCalc,
+          fastestPace: cvComp.fastestPaceSec,
+          slowestPace: cvComp.slowestPaceSec,
+          avgPace: cvComp.avgPaceSec,
+          spreadSec: cvComp.spreadSec
+        } : null,
+        easySummary: easyComp ? {
+          fastest: easyComp.fastestCalc,
+          slowest: easyComp.slowestCalc,
+          fastestPace: easyComp.fastestPaceSec,
+          slowestPace: easyComp.slowestPaceSec,
+          avgPace: easyComp.avgPaceSec,
+          spreadSec: easyComp.spreadSec
+        } : null
+      };
+    }
+  };
+
+  // Export to window
+  global.OmniPace = {
+    STANDARD_DISTANCES,
+    Units,
+    DanielsVDOT,
+    McMillanRunning,
+    TinmanSchwartz,
+    HansonsMethod,
+    RunnersCalc,
+    EightyTwenty,
+    AdditionalCalculators,
+    ComparisonEngine
+  };
+
+})(typeof window !== 'undefined' ? window : global);
+
+</script>
+  <script>
+/**
+ * OmniPace Mobile - Unified Multi-Calculator Running Suite
+ * Mobile-First UI Controller & Engine Orchestrator for iPhone 15 Pro Max
+ */
+
+(function () {
+  'use strict';
+
+  // Mobile App State
+  const state = {
+    distanceMeters: 5000,
+    timeSeconds: 1200, // 20:00 default
+    isImperial: false, // false = metric (min/km), true = imperial (min/mi)
+    weeklyMiles: 40,
+    riegelExponent: 1.06,
+    activeTab: 'overall',
+    theme: 'dark',
+    viewModes: {
+      overallRaces: 'cards',
+      overallPaces: 'cards',
+      daniels: 'cards',
+      mcmillan: 'cards',
+      tinman: 'cards',
+      hansons: 'cards',
+      runnerscalc: 'cards',
+      eightytwenty: 'cards',
+      additional: 'cards'
+    }
+  };
+
+  // Calculator instances from OmniPace core
+  const {
+    STANDARD_DISTANCES,
+    Units,
+    DanielsVDOT,
+    McMillanRunning,
+    TinmanSchwartz,
+    HansonsMethod,
+    RunnersCalc,
+    EightyTwenty,
+    AdditionalCalculators,
+    ComparisonEngine
+  } = window.OmniPace;
+
+  // DOM Elements cache
+  let dom = {};
+
+  function initDom() {
+    dom = {
+      // Inputs
+      distancePresetSelect: document.getElementById('distance-preset-select'),
+      customDistanceGroup: document.getElementById('custom-distance-group'),
+      customDistanceVal: document.getElementById('custom-distance-val'),
+      customDistanceUnit: document.getElementById('custom-distance-unit'),
+      hoursInput: document.getElementById('time-hours'),
+      minutesInput: document.getElementById('time-minutes'),
+      secondsInput: document.getElementById('time-seconds'),
+      stepperButtons: document.querySelectorAll('.stepper-btn'),
+      presetChips: document.querySelectorAll('.chip-btn'),
+      weeklyMilesInput: document.getElementById('weekly-miles-input'),
+      weeklyMilesDisplay: document.getElementById('weekly-miles-display'),
+      riegelExponentInput: document.getElementById('riegel-exponent-input'),
+      riegelExponentDisplay: document.getElementById('riegel-exponent-display'),
+      optionalToggle: document.getElementById('optional-controls-toggle'),
+      optionalParams: document.getElementById('optional-params'),
+
+      // Controls & Toggles
+      unitToggleBtn: document.getElementById('unit-toggle-btn'),
+      unitPillKm: document.getElementById('unit-pill-km'),
+      unitPillMi: document.getElementById('unit-pill-mi'),
+      themeToggleBtn: document.getElementById('theme-toggle-btn'),
+      tabButtons: document.querySelectorAll('.nav-tab-btn'),
+      tabPanels: document.querySelectorAll('.tab-content-panel'),
+      tabScroller: document.getElementById('tab-scroller'),
+
+      // Feedback Strip
+      feedbackPace: document.getElementById('feedback-pace'),
+      feedbackSpeed: document.getElementById('feedback-speed'),
+      feedbackVdot: document.getElementById('feedback-vdot'),
+
+      // Bottom Dock
+      dockCvPace: document.getElementById('dock-cv-pace'),
+      dockUnitToggle: document.getElementById('dock-unit-toggle'),
+      dockUnitLabel: document.getElementById('dock-unit-label'),
+      dockCopyBtn: document.getElementById('dock-copy-btn'),
+      copySummaryBtn: document.getElementById('copy-summary-btn'),
+
+      // Toast
+      mobileToast: document.getElementById('mobile-toast')
+    };
+  }
+
+  // Pre-configured race presets
+  const BENCHMARKS = {
+    'sub20-5k': { dist: 5000, h: 0, m: 19, s: 59 },
+    '24min-5k': { dist: 5000, h: 0, m: 24, s: 0 },
+    'sub40-10k': { dist: 10000, h: 0, m: 39, s: 50 },
+    '45min-10k': { dist: 10000, h: 0, m: 45, s: 0 },
+    'sub90-half': { dist: 21097.5, h: 1, m: 29, s: 30 },
+    'sub145-half': { dist: 21097.5, h: 1, m: 45, s: 0 },
+    'sub3-marathon': { dist: 42195, h: 2, m: 59, s: 0 },
+    'sub330-marathon': { dist: 42195, h: 3, m: 29, s: 0 },
+    'sub4-marathon': { dist: 42195, h: 3, m: 59, s: 0 }
+  };
+
+  // Toast Notification helper
+  let toastTimer = null;
+  function showToast(message) {
+    if (!dom.mobileToast) return;
+    dom.mobileToast.textContent = message;
+    dom.mobileToast.classList.add('visible');
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      dom.mobileToast.classList.remove('visible');
+    }, 2400);
+  }
+
+  // Main Calculation Execution Cycle
+  function runCalculations() {
+    if (state.distanceMeters <= 0 || state.timeSeconds <= 0) return;
+
+    // 1. Update Input Strip Feedback
+    updateInputFeedback();
+
+    // 2. Run all 7 Calculators
+    const results = {
+      daniels: DanielsVDOT.calculate(state.distanceMeters, state.timeSeconds),
+      mcmillan: McMillanRunning.calculate(state.distanceMeters, state.timeSeconds),
+      tinman: TinmanSchwartz.calculate(state.distanceMeters, state.timeSeconds),
+      hansons: HansonsMethod.calculate(state.distanceMeters, state.timeSeconds),
+      runnerscalc: RunnersCalc.calculate(state.distanceMeters, state.timeSeconds, {
+        weeklyMiles: state.weeklyMiles,
+        riegelExponent: state.riegelExponent
+      }),
+      eightytwenty: EightyTwenty.calculate(state.distanceMeters, state.timeSeconds),
+      additional: AdditionalCalculators.calculate(state.distanceMeters, state.timeSeconds)
+    };
+
+    // 3. Synthesize Comparison Matrix
+    const analysis = ComparisonEngine.analyze(results);
+
+    // 4. Update Sticky Bottom Dock CV Pace
+    if (analysis.insights && analysis.insights.cvSummary) {
+      const cvPace = analysis.insights.cvSummary.avgPace;
+      if (dom.dockCvPace) {
+        dom.dockCvPace.textContent = Units.formatPace(cvPace, state.isImperial);
+      }
+    }
+
+    // 5. Render Respective Active Panels
+    renderOverallTab(analysis, results);
+    renderDanielsTab(results.daniels);
+    renderMcMillanTab(results.mcmillan);
+    renderTinmanTab(results.tinman);
+    renderHansonsTab(results.hansons);
+    renderRunnersCalcTab(results.runnerscalc);
+    renderEightyTwentyTab(results.eightytwenty);
+    renderAdditionalTab(results.additional);
+
+    // 6. Render Mobile SVG Chart
+    renderComparisonCharts(analysis, results);
+  }
+
+  function updateInputFeedback() {
+    const secPerKm = (state.timeSeconds / state.distanceMeters) * 1000.0;
+    const paceStr = Units.formatPace(secPerKm, state.isImperial);
+    const speedKmh = (state.distanceMeters / 1000.0) / (state.timeSeconds / 3600.0);
+    const speedMph = speedKmh * 0.621371;
+
+    if (dom.feedbackPace) dom.feedbackPace.textContent = paceStr;
+    if (dom.feedbackSpeed) {
+      dom.feedbackSpeed.textContent = state.isImperial
+        ? `${speedMph.toFixed(2)} mph`
+        : `${speedKmh.toFixed(2)} km/h`;
+    }
+
+    const vdotEst = DanielsVDOT.calculateVDOT(state.distanceMeters, state.timeSeconds);
+    if (dom.feedbackVdot) dom.feedbackVdot.textContent = `VDOT ${vdotEst.toFixed(1)}`;
+  }
+
+  /* ==========================================================================
+     Tab 1: Overall Synthesis & Model Comparison
+     ========================================================================== */
+  function renderOverallTab(analysis, results) {
+    const container = document.getElementById('overall-panel-content');
+    if (!container) return;
+
+    const ins = analysis.insights;
+    const mSum = ins.marathonSummary;
+    const hmSum = ins.hmSummary;
+    const tSum = ins.thresholdSummary;
+    const cvSum = ins.cvSummary;
+
+    let html = `
+      <!-- Mobile Synthesis Cards Grid -->
+      <div class="synthesis-grid">
+        <!-- Critical Velocity (CV) Highlight Card -->
+        <div class="synthesis-card highlight">
+          <div class="synthesis-card-header">
+            <span class="synthesis-card-title">★ Critical Velocity (CV)</span>
+            <span class="synthesis-card-icon">🎯</span>
+          </div>
+          <div class="synthesis-card-body">
+            <div class="primary-val" style="color:var(--color-tinman);">${cvSum ? Units.formatPace(cvSum.avgPace, state.isImperial) : '--:--'}</div>
+            <div class="primary-sub">Type IIa intermediate fibers (~30-35 min effort)</div>
+          </div>
+          <div class="synthesis-card-footer">
+            <span>Fastest: <strong>${cvSum ? Units.formatPace(cvSum.fastestPace, state.isImperial) : ''}</strong> (${cvSum ? cvSum.fastest : ''})</span>
+            <span>Slowest: <strong>${cvSum ? Units.formatPace(cvSum.slowestPace, state.isImperial) : ''}</strong> (${cvSum ? cvSum.slowest : ''})</span>
+          </div>
+        </div>
+
+        <!-- Marathon Prediction Card -->
+        <div class="synthesis-card">
+          <div class="synthesis-card-header">
+            <span class="synthesis-card-title">Marathon Spread</span>
+            <span class="synthesis-card-icon">🏃‍♂️</span>
+          </div>
+          <div class="synthesis-card-body">
+            <div class="primary-val">${mSum ? mSum.avgTime : '--:--'}</div>
+            <div class="primary-sub">Average projection across models</div>
+          </div>
+          <div class="synthesis-card-footer">
+            <span>Fastest: <strong style="color:var(--color-mcmillan);">${mSum ? mSum.fastestTime : ''}</strong> (${mSum ? mSum.fastest : ''})</span>
+            <span>Slowest: <strong style="color:var(--color-tinman);">${mSum ? mSum.slowestTime : ''}</strong> (${mSum ? mSum.slowest : ''})</span>
+          </div>
+        </div>
+
+        <!-- Half Marathon Spread Card -->
+        <div class="synthesis-card">
+          <div class="synthesis-card-header">
+            <span class="synthesis-card-title">Half Marathon Spread</span>
+            <span class="synthesis-card-icon">🥈</span>
+          </div>
+          <div class="synthesis-card-body">
+            <div class="primary-val">${hmSum ? hmSum.avgTime : '--:--'}</div>
+            <div class="primary-sub">Projected HM consensus</div>
+          </div>
+          <div class="synthesis-card-footer">
+            <span>Fastest: <strong>${hmSum ? hmSum.fastestTime : ''}</strong></span>
+            <span>Slowest: <strong>${hmSum ? hmSum.slowestTime : ''}</strong></span>
+          </div>
+        </div>
+
+        <!-- Threshold Pace Card -->
+        <div class="synthesis-card">
+          <div class="synthesis-card-header">
+            <span class="synthesis-card-title">Threshold / Tempo</span>
+            <span class="synthesis-card-icon">⚡</span>
+          </div>
+          <div class="synthesis-card-body">
+            <div class="primary-val">${tSum ? Units.formatPace(tSum.avgPace, state.isImperial) : '--:--'}</div>
+            <div class="primary-sub">Lactate steady-state (~60 min effort)</div>
+          </div>
+          <div class="synthesis-card-footer">
+            <span>Fastest: <strong>${tSum ? Units.formatPace(tSum.fastestPace, state.isImperial) : ''}</strong></span>
+            <span>Slowest: <strong>${tSum ? Units.formatPace(tSum.slowestPace, state.isImperial) : ''}</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Optimized SVG Chart -->
+      <div class="chart-container">
+        <div class="chart-header">
+          <h3 class="chart-title">Race Pace Curves Across Models</h3>
+          <div class="chart-legend" id="race-curve-legend"></div>
+        </div>
+        <div class="svg-chart-wrapper" id="svg-race-curve-wrapper"></div>
+      </div>
+
+      <!-- Master Race Equivalencies Section -->
+      <div class="section-header">
+        <span class="section-title">🏆 Equivalent Race Times</span>
+        <div class="view-switcher-pill" data-section="overallRaces">
+          <button class="view-btn ${state.viewModes.overallRaces === 'cards' ? 'active' : ''}" data-mode="cards">📱 Cards</button>
+          <button class="view-btn ${state.viewModes.overallRaces === 'table' ? 'active' : ''}" data-mode="table">📋 Table</button>
+        </div>
+      </div>
+    `;
+
+    // Render Race Times (Cards or Table)
+    if (state.viewModes.overallRaces === 'cards') {
+      html += `<div class="cards-list">`;
+      analysis.raceComparison.forEach((row, idx) => {
+        const getEntry = (calcId) => {
+          const found = row.entries.find(e => e.calcId === calcId);
+          return found ? Units.formatTime(found.timeSec, true) : '--:--';
+        };
+
+        const danielsT = getEntry('daniels');
+        const mcmillanT = getEntry('mcmillan');
+        const tinmanT = getEntry('tinman');
+        const hansonsT = getEntry('hansons');
+        const cameronT = Units.formatTime(RunnersCalc.cameron(state.timeSeconds, state.distanceMeters, row.meters), true);
+        const riegelT = Units.formatTime(RunnersCalc.riegel(state.timeSeconds, state.distanceMeters, row.meters, state.riegelExponent), true);
+
+        html += `
+          <div class="mobile-card">
+            <div class="card-top">
+              <div class="card-title-group">
+                <span class="card-title">${row.name}</span>
+                <span class="card-subtitle">${(row.meters / 1000).toFixed(2)} km • Spread: +${Units.formatTime(row.spreadSec, false)}</span>
+              </div>
+              <div class="card-main-metric">
+                <span class="card-avg-val">${Units.formatTime(row.avgTimeSec, true)}</span>
+                <span class="card-avg-label">Consensus Avg</span>
+              </div>
+            </div>
+
+            <div class="card-range-strip">
+              <div class="range-item">
+                <span class="range-tag fast">Fastest: ${Units.formatTime(row.minTimeSec, true)}</span>
+                <span class="range-model">${row.fastestCalc}</span>
+              </div>
+              <div class="range-item right">
+                <span class="range-tag slow">Slowest: ${Units.formatTime(row.maxTimeSec, true)}</span>
+                <span class="range-model">${row.slowestCalc}</span>
+              </div>
+            </div>
+
+            <button type="button" class="card-accordion-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '▲ Hide All Models' : '▼ View All Models Breakdown';">
+              ▼ View All Models Breakdown
+            </button>
+            <div class="card-breakdown-drawer">
+              <div class="breakdown-row"><span class="breakdown-calc-name">Jack Daniels:</span><span class="breakdown-calc-val">${danielsT}</span></div>
+              <div class="breakdown-row"><span class="breakdown-calc-name">McMillan:</span><span class="breakdown-calc-val">${mcmillanT}</span></div>
+              <div class="breakdown-row"><span class="breakdown-calc-name">Tinman:</span><span class="breakdown-calc-val">${tinmanT}</span></div>
+              <div class="breakdown-row"><span class="breakdown-calc-name">Hansons:</span><span class="breakdown-calc-val">${hansonsT}</span></div>
+              <div class="breakdown-row"><span class="breakdown-calc-name">Cameron:</span><span class="breakdown-calc-val">${cameronT}</span></div>
+              <div class="breakdown-row"><span class="breakdown-calc-name">Riegel (${state.riegelExponent}):</span><span class="breakdown-calc-val">${riegelT}</span></div>
+            </div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+    } else {
+      // Table View
+      html += `
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Daniels</th>
+                <th>McMillan</th>
+                <th>Tinman</th>
+                <th>Hansons</th>
+                <th>Cameron</th>
+                <th>Riegel</th>
+                <th>Fastest</th>
+                <th>Slowest</th>
+                <th>Average</th>
+              </tr>
+            </thead>
+            <tbody>
+      `;
+      analysis.raceComparison.forEach(row => {
+        const getEntry = (calcId) => {
+          const found = row.entries.find(e => e.calcId === calcId);
+          return found ? Units.formatTime(found.timeSec, true) : '--:--';
+        };
+        html += `
+          <tr>
+            <td><strong>${row.name}</strong></td>
+            <td class="font-mono">${getEntry('daniels')}</td>
+            <td class="font-mono">${getEntry('mcmillan')}</td>
+            <td class="font-mono">${getEntry('tinman')}</td>
+            <td class="font-mono">${getEntry('hansons')}</td>
+            <td class="font-mono">${Units.formatTime(RunnersCalc.cameron(state.timeSeconds, state.distanceMeters, row.meters), true)}</td>
+            <td class="font-mono">${Units.formatTime(RunnersCalc.riegel(state.timeSeconds, state.distanceMeters, row.meters, state.riegelExponent), true)}</td>
+            <td><span class="badge badge-fastest font-mono">${Units.formatTime(row.minTimeSec, true)}</span></td>
+            <td><span class="badge badge-slowest font-mono">${Units.formatTime(row.maxTimeSec, true)}</span></td>
+            <td><span class="badge badge-average font-mono">${Units.formatTime(row.avgTimeSec, true)}</span></td>
+          </tr>
+        `;
+      });
+      html += `</tbody></table></div>`;
+    }
+
+    // Master Training Paces Section
+    html += `
+      <div class="section-header" style="margin-top: 14px;">
+        <span class="section-title">⏱️ Training Paces Comparison</span>
+        <div class="view-switcher-pill" data-section="overallPaces">
+          <button class="view-btn ${state.viewModes.overallPaces === 'cards' ? 'active' : ''}" data-mode="cards">📱 Cards</button>
+          <button class="view-btn ${state.viewModes.overallPaces === 'table' ? 'active' : ''}" data-mode="table">📋 Table</button>
+        </div>
+      </div>
+    `;
+
+    if (state.viewModes.overallPaces === 'cards') {
+      html += `<div class="cards-list">`;
+      analysis.paceComparison.forEach(pRow => {
+        const isCv = pRow.id === 'cv';
+        const getPaceStr = (calcId) => {
+          const found = pRow.entries.find(e => e.calcId === calcId);
+          if (!found) return '--:--';
+          if (Math.abs(found.minSecPerKm - found.maxSecPerKm) > 1) {
+            return `${Units.formatPace(found.minSecPerKm, state.isImperial)} - ${Units.formatPace(found.maxSecPerKm, state.isImperial)}`;
+          }
+          return Units.formatPace(found.midSecPerKm, state.isImperial);
+        };
+
+        html += `
+          <div class="mobile-card ${isCv ? 'is-cv' : ''}">
+            <div class="card-top">
+              <div class="card-title-group">
+                <span class="card-title" style="${isCv ? 'color:var(--color-tinman);' : ''}">${isCv ? '★ ' : ''}${pRow.name}</span>
+                <span class="card-subtitle">${pRow.description}</span>
+              </div>
+              <div class="card-main-metric">
+                <span class="card-avg-val" style="${isCv ? 'color:var(--color-tinman);' : ''}">${Units.formatPace(pRow.avgPaceSec, state.isImperial)}</span>
+                <span class="card-avg-label">Consensus Avg</span>
+              </div>
+            </div>
+
+            <div class="card-range-strip">
+              <div class="range-item">
+                <span class="range-tag fast">Fastest: ${Units.formatPace(pRow.fastestPaceSec, state.isImperial)}</span>
+                <span class="range-model">${pRow.fastestCalc}</span>
+              </div>
+              <div class="range-item right">
+                <span class="range-tag slow">Slowest: ${Units.formatPace(pRow.slowestPaceSec, state.isImperial)}</span>
+                <span class="range-model">${pRow.slowestCalc}</span>
+              </div>
+            </div>
+
+            <button type="button" class="card-accordion-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '▲ Hide All Coaches' : '▼ View Breakdown by Coach';">
+              ▼ View Breakdown by Coach
+            </button>
+            <div class="card-breakdown-drawer">
+              <div class="breakdown-row"><span class="breakdown-calc-name">Jack Daniels:</span><span class="breakdown-calc-val">${getPaceStr('daniels')}</span></div>
+              <div class="breakdown-row"><span class="breakdown-calc-name">McMillan:</span><span class="breakdown-calc-val">${getPaceStr('mcmillan')}</span></div>
+              <div class="breakdown-row"><span class="breakdown-calc-name">Tinman:</span><span class="breakdown-calc-val">${getPaceStr('tinman')}</span></div>
+              <div class="breakdown-row"><span class="breakdown-calc-name">Hansons:</span><span class="breakdown-calc-val">${getPaceStr('hansons')}</span></div>
+              <div class="breakdown-row"><span class="breakdown-calc-name">80/20 (Fitzgerald):</span><span class="breakdown-calc-val">${getPaceStr('eightytwenty')}</span></div>
+            </div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+    } else {
+      // Table View
+      html += `
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Zone / Category</th>
+                <th>Daniels</th>
+                <th>McMillan</th>
+                <th>Tinman</th>
+                <th>Hansons</th>
+                <th>80/20</th>
+                <th>Average Pace</th>
+              </tr>
+            </thead>
+            <tbody>
+      `;
+      analysis.paceComparison.forEach(pRow => {
+        const isCv = pRow.id === 'cv';
+        const getPaceStr = (calcId) => {
+          const found = pRow.entries.find(e => e.calcId === calcId);
+          if (!found) return '--:--';
+          if (Math.abs(found.minSecPerKm - found.maxSecPerKm) > 1) {
+            return `${Units.formatPace(found.minSecPerKm, state.isImperial)} - ${Units.formatPace(found.maxSecPerKm, state.isImperial)}`;
+          }
+          return Units.formatPace(found.midSecPerKm, state.isImperial);
+        };
+        html += `
+          <tr class="${isCv ? 'highlight-row' : ''}">
+            <td><strong style="${isCv ? 'color:var(--color-tinman);' : ''}">${isCv ? '★ ' : ''}${pRow.name}</strong></td>
+            <td class="font-mono">${getPaceStr('daniels')}</td>
+            <td class="font-mono">${getPaceStr('mcmillan')}</td>
+            <td class="font-mono">${getPaceStr('tinman')}</td>
+            <td class="font-mono">${getPaceStr('hansons')}</td>
+            <td class="font-mono">${getPaceStr('eightytwenty')}</td>
+            <td><span class="badge badge-average font-mono">${Units.formatPace(pRow.avgPaceSec, state.isImperial)}</span></td>
+          </tr>
+        `;
+      });
+      html += `</tbody></table></div>`;
+    }
+
+    // Physiological Coaching Insights
+    html += `
+      <div class="section-header" style="margin-top: 14px;">
+        <span class="section-title">🧠 Coaching Insights</span>
+      </div>
+
+      <div class="insight-box">
+        <h3>1. Critical Velocity (CV) vs. Lactate Threshold (LT)</h3>
+        <p>
+          Jack Daniels defines <strong>Threshold (T-Pace)</strong> as the pace you can maintain for ~60 minutes (~88% VO2max).
+          Tom 'Tinman' Schwartz defines <strong>Critical Velocity (CV)</strong> at ~90% VO2max (~30-35 min pace). CV specifically targets <em>Type IIa intermediate muscle fibers</em>, transforming them into high-power aerobic engines without excessive acidosis.
+        </p>
+      </div>
+
+      <div class="insight-box">
+        <h3>2. The Marathon Divergence</h3>
+        <p>
+          At 10K, predictions across models typically agree within 15-30 seconds. At the marathon distance, they diverge by <strong>${mSum ? mSum.spreadFormatted : 'several minutes'}</strong>. Riegel and Daniels assume optimal aerobic scaling, whereas Cameron and McMillan incorporate real-world empirical fatigue and glycogen depletion curves.
+        </p>
+      </div>
+    `;
+
+    container.innerHTML = html;
+    wireViewSwitchers();
+  }
+
+  /* ==========================================================================
+     Tab 2: McMillan Running
+     ========================================================================== */
+  function renderMcMillanTab(data) {
+    const container = document.getElementById('mcmillan-panel-content');
+    if (!container) return;
+
+    const mRace = data.raceTimes.find(r => r.id === 'marathon');
+    const hmRace = data.raceTimes.find(r => r.id === 'half');
+    const tenkRace = data.raceTimes.find(r => r.id === '10k');
+
+    let html = `
+      <div class="calculator-hero" style="border-left: 4px solid var(--color-mcmillan);">
+        <div class="hero-top">
+          <div>
+            <div class="hero-title" style="color:var(--color-mcmillan);">McMillan Running</div>
+            <p class="hero-desc">
+              Greg McMillan's 3-pillar endurance framework (Endurance, Stamina, Speed).
+            </p>
+            <a class="hero-source-link" href="${data.sourceUrl}" target="_blank" rel="noopener">
+              Official Source: mcmillanrunning.com ↗
+            </a>
+          </div>
+          <span class="brand-badge" style="background:var(--color-mcmillan);">Greg McMillan</span>
+        </div>
+        <div class="hero-metric-box">
+          <div class="metric-title">McMillan Marathon Time</div>
+          <div class="metric-number" style="color:var(--color-mcmillan);">${mRace ? Units.formatTime(mRace.timeSec, true) : '--:--'}</div>
+          <div class="metric-sub">HM: ${hmRace ? Units.formatTime(hmRace.timeSec, true) : '--:--'} • 10K: ${tenkRace ? Units.formatTime(tenkRace.timeSec, true) : '--:--'}</div>
+        </div>
+      </div>
+
+      <!-- Specialty Velocities Cards -->
+      <div class="synthesis-grid">
+        <div class="synthesis-card highlight">
+          <div class="synthesis-card-header">
+            <span class="synthesis-card-title">★ McMillan CV Pace</span>
+            <span class="synthesis-card-icon">🎯</span>
+          </div>
+          <div class="synthesis-card-body">
+            <div class="primary-val" style="color:var(--color-tinman);">${Units.formatPace(data.cvPace, state.isImperial)}</div>
+            <div class="primary-sub">1.0208x of 5K (~30-35 min pace)</div>
+          </div>
+        </div>
+        <div class="synthesis-card">
+          <div class="synthesis-card-header">
+            <span class="synthesis-card-title">vLT (Lactate Threshold)</span>
+            <span class="synthesis-card-icon">⚡</span>
+          </div>
+          <div class="synthesis-card-body">
+            <div class="primary-val" style="color:var(--color-mcmillan);">${Units.formatPace(data.vltPace, state.isImperial)}</div>
+            <div class="primary-sub">1.0708x of 5K (~60 min pace)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Training Paces Section -->
+      <div class="section-header">
+        <span class="section-title">McMillan Training Paces</span>
+        <div class="view-switcher-pill" data-section="mcmillan">
+          <button class="view-btn ${state.viewModes.mcmillan === 'cards' ? 'active' : ''}" data-mode="cards">📱 Cards</button>
+          <button class="view-btn ${state.viewModes.mcmillan === 'table' ? 'active' : ''}" data-mode="table">📋 Table</button>
+        </div>
+      </div>
+    `;
+
+    if (state.viewModes.mcmillan === 'cards') {
+      html += `<div class="cards-list">`;
+      data.trainingPaces.forEach(p => {
+        const paceStr = p.singlePace
+          ? Units.formatPace(p.paceSecPerKm, state.isImperial)
+          : `${Units.formatPace(p.paceSecPerKmMin, state.isImperial)} - ${Units.formatPace(p.paceSecPerKmMax, state.isImperial)}`;
+
+        let splitsHtml = '';
+        if (p.splits) {
+          const splitList = Object.entries(p.splits).map(([d, t]) => `${d}: ${t}`).join(' • ');
+          splitsHtml = `<div class="card-subtitle" style="margin-top:2px;">Track Splits: ${splitList}</div>`;
+        }
+
+        html += `
+          <div class="mobile-card ${p.isHighlight ? 'is-cv' : ''}">
+            <div class="card-top">
+              <div class="card-title-group">
+                <span class="card-title" style="${p.isHighlight ? 'color:var(--color-tinman);' : ''}">${p.name}</span>
+                <span class="card-subtitle">[${p.pillar}] • ${p.intensity}</span>
+              </div>
+              <div class="card-main-metric">
+                <span class="card-avg-val" style="${p.isHighlight ? 'color:var(--color-tinman);' : ''}">${paceStr}</span>
+              </div>
+            </div>
+            ${splitsHtml}
+            <div class="card-subtitle">${p.purpose}</div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+    } else {
+      // Table
+      html += `
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr><th>Pillar</th><th>Workout</th><th>Pace</th><th>Adaptation</th></tr>
+            </thead>
+            <tbody>
+      `;
+      data.trainingPaces.forEach(p => {
+        const paceStr = p.singlePace
+          ? Units.formatPace(p.paceSecPerKm, state.isImperial)
+          : `${Units.formatPace(p.paceSecPerKmMin, state.isImperial)} - ${Units.formatPace(p.paceSecPerKmMax, state.isImperial)}`;
+        html += `
+          <tr class="${p.isHighlight ? 'highlight-row' : ''}">
+            <td><span class="badge badge-average">${p.pillar}</span></td>
+            <td><strong>${p.name}</strong></td>
+            <td class="font-mono">${paceStr}</td>
+            <td style="font-size:0.75rem;">${p.purpose}</td>
+          </tr>
+        `;
+      });
+      html += `</tbody></table></div>`;
+    }
+
+    container.innerHTML = html;
+    wireViewSwitchers();
+  }
+
+  /* ==========================================================================
+     Tab 3: Tinman Schwartz (Critical Velocity)
+     ========================================================================== */
+  function renderTinmanTab(data) {
+    const container = document.getElementById('tinman-panel-content');
+    if (!container) return;
+
+    const cvZone = data.trainingPaces.find(t => t.name.includes('Critical Velocity') || t.name === 'CV');
+    const mlssZone = data.trainingPaces.find(t => t.name.includes('MLSS') || t.name.includes('Threshold'));
+    const mPred = data.raceTimes.find(r => r.id === 'marathon');
+
+    let html = `
+      <div class="calculator-hero" style="border-left: 4px solid var(--color-tinman);">
+        <div class="hero-top">
+          <div>
+            <div class="hero-title" style="color:var(--color-tinman);">Tinman Running Calculator</div>
+            <p class="hero-desc">
+              Coach Tom 'Tinman' Schwartz's famous Critical Velocity (CV) & 13-zone pacing system.
+            </p>
+            <a class="hero-source-link" href="${data.sourceUrl}" target="_blank" rel="noopener">
+              Official Source: finalsurge.com/tinman-calculator ↗
+            </a>
+          </div>
+          <span class="brand-badge" style="background:var(--color-tinman);">Tinman CV</span>
+        </div>
+        <div class="hero-metric-box">
+          <div class="metric-title">Critical Velocity (CV)</div>
+          <div class="metric-number" style="color:var(--color-tinman);">${Units.formatPace(data.cvPace, state.isImperial)}</div>
+          <div class="metric-sub">Range: ${cvZone ? Units.formatPace(cvZone.paceSecPerKmMin, state.isImperial) + ' - ' + Units.formatPace(cvZone.paceSecPerKmMax, state.isImperial) : '--:--'}</div>
+        </div>
+      </div>
+
+      <div class="synthesis-grid">
+        <div class="synthesis-card highlight">
+          <div class="synthesis-card-header">
+            <span class="synthesis-card-title">★ Critical Velocity (CV)</span>
+            <span class="synthesis-card-icon">🎯</span>
+          </div>
+          <div class="synthesis-card-body">
+            <div class="primary-val" style="color:var(--color-tinman);">${cvZone ? Units.formatPace(cvZone.paceSecPerKmMin, state.isImperial) + ' - ' + Units.formatPace(cvZone.paceSecPerKmMax, state.isImperial) : '--:--'}</div>
+            <div class="primary-sub">90% VO2max Anchor (5-6 x 1k repeats)</div>
+          </div>
+        </div>
+        <div class="synthesis-card">
+          <div class="synthesis-card-header">
+            <span class="synthesis-card-title">Marathon Equivalent</span>
+            <span class="synthesis-card-icon">🏃‍♂️</span>
+          </div>
+          <div class="synthesis-card-body">
+            <div class="primary-val" style="color:#10b981;">${mPred ? Units.formatTime(mPred.timeSec, true) : '--:--'}</div>
+            <div class="primary-sub">Tinman Polynomial Scaling</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span class="section-title">Tinman 13 Intensity Zones</span>
+        <div class="view-switcher-pill" data-section="tinman">
+          <button class="view-btn ${state.viewModes.tinman === 'cards' ? 'active' : ''}" data-mode="cards">📱 Cards</button>
+          <button class="view-btn ${state.viewModes.tinman === 'table' ? 'active' : ''}" data-mode="table">📋 Table</button>
+        </div>
+      </div>
+    `;
+
+    if (state.viewModes.tinman === 'cards') {
+      html += `<div class="cards-list">`;
+      data.trainingPaces.forEach(p => {
+        const paceStr = `${Units.formatPace(p.paceSecPerKmMin, state.isImperial)} - ${Units.formatPace(p.paceSecPerKmMax, state.isImperial)}`;
+        let splitsHtml = '';
+        if (p.splits) {
+          const splitList = Object.entries(p.splits).map(([d, t]) => `${d}: ${t}`).join(' • ');
+          splitsHtml = `<div class="card-subtitle" style="margin-top:2px;">Track Splits: ${splitList}</div>`;
+        }
+
+        html += `
+          <div class="mobile-card ${p.isHighlight ? 'is-cv' : ''}">
+            <div class="card-top">
+              <div class="card-title-group">
+                <span class="card-title" style="${p.isHighlight ? 'color:var(--color-tinman);' : ''}">${p.name}</span>
+                <span class="card-subtitle">${p.intensity}</span>
+              </div>
+              <div class="card-main-metric">
+                <span class="card-avg-val" style="${p.isHighlight ? 'color:var(--color-tinman);' : ''}">${paceStr}</span>
+              </div>
+            </div>
+            ${splitsHtml}
+            <div class="card-subtitle">${p.purpose}</div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+    } else {
+      // Table
+      html += `
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr><th>Zone</th><th>Intensity</th><th>Pace</th><th>Guidelines</th></tr>
+            </thead>
+            <tbody>
+      `;
+      data.trainingPaces.forEach(p => {
+        const paceStr = `${Units.formatPace(p.paceSecPerKmMin, state.isImperial)} - ${Units.formatPace(p.paceSecPerKmMax, state.isImperial)}`;
+        html += `
+          <tr class="${p.isHighlight ? 'highlight-row' : ''}">
+            <td><strong style="${p.isHighlight ? 'color:var(--color-tinman);' : ''}">${p.name}</strong></td>
+            <td>${p.intensity}</td>
+            <td class="font-mono">${paceStr}</td>
+            <td style="font-size:0.75rem;">${p.purpose}</td>
+          </tr>
+        `;
+      });
+      html += `</tbody></table></div>`;
+    }
+
+    container.innerHTML = html;
+    wireViewSwitchers();
+  }
+
+  /* ==========================================================================
+     Tab 4: Jack Daniels VDOT
+     ========================================================================== */
+  function renderDanielsTab(data) {
+    const container = document.getElementById('daniels-panel-content');
+    if (!container) return;
+
+    let html = `
+      <div class="calculator-hero" style="border-left: 4px solid var(--color-daniels);">
+        <div class="hero-top">
+          <div>
+            <div class="hero-title" style="color:var(--color-daniels);">Jack Daniels' VDOT System</div>
+            <p class="hero-desc">
+              Based on oxygen kinetics and <em>Daniels' Running Formula</em>.
+            </p>
+            <a class="hero-source-link" href="${data.sourceUrl}" target="_blank" rel="noopener">
+              Official Source: vdoto2.com ↗
+            </a>
+          </div>
+          <span class="brand-badge" style="background:var(--color-daniels);">Dr. Daniels</span>
+        </div>
+        <div class="hero-metric-box">
+          <div class="metric-title">${data.metricTitle}</div>
+          <div class="metric-number" style="color:var(--color-daniels);">${data.metricValue}</div>
+          <div class="metric-sub">${data.metricSub}</div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span class="section-title">Official Daniels Paces</span>
+        <div class="view-switcher-pill" data-section="daniels">
+          <button class="view-btn ${state.viewModes.daniels === 'cards' ? 'active' : ''}" data-mode="cards">📱 Cards</button>
+          <button class="view-btn ${state.viewModes.daniels === 'table' ? 'active' : ''}" data-mode="table">📋 Table</button>
+        </div>
+      </div>
+    `;
+
+    if (state.viewModes.daniels === 'cards') {
+      html += `<div class="cards-list">`;
+      data.trainingPaces.forEach(p => {
+        const paceStr = p.singlePace
+          ? Units.formatPace(p.paceSecPerKm, state.isImperial)
+          : `${Units.formatPace(p.paceSecPerKmMin, state.isImperial)} - ${Units.formatPace(p.paceSecPerKmMax, state.isImperial)}`;
+
+        let splitsHtml = '';
+        if (p.splits) {
+          const splitList = Object.entries(p.splits).map(([d, t]) => `${d}: ${t}`).join(' • ');
+          splitsHtml = `<div class="card-subtitle" style="margin-top:2px;">Track Splits: ${splitList}</div>`;
+        }
+
+        html += `
+          <div class="mobile-card">
+            <div class="card-top">
+              <div class="card-title-group">
+                <span class="card-title" style="color:var(--color-daniels);">${p.name}</span>
+                <span class="card-subtitle">${p.intensity}</span>
+              </div>
+              <div class="card-main-metric">
+                <span class="card-avg-val">${paceStr}</span>
+              </div>
+            </div>
+            ${splitsHtml}
+            <div class="card-subtitle">${p.purpose}</div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+    } else {
+      // Table
+      html += `
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr><th>Zone</th><th>Intensity</th><th>Pace</th><th>Purpose</th></tr>
+            </thead>
+            <tbody>
+      `;
+      data.trainingPaces.forEach(p => {
+        const paceStr = p.singlePace
+          ? Units.formatPace(p.paceSecPerKm, state.isImperial)
+          : `${Units.formatPace(p.paceSecPerKmMin, state.isImperial)} - ${Units.formatPace(p.paceSecPerKmMax, state.isImperial)}`;
+        html += `
+          <tr>
+            <td><strong style="color:var(--color-daniels);">${p.name}</strong></td>
+            <td>${p.intensity}</td>
+            <td class="font-mono">${paceStr}</td>
+            <td style="font-size:0.75rem;">${p.purpose}</td>
+          </tr>
+        `;
+      });
+      html += `</tbody></table></div>`;
+    }
+
+    container.innerHTML = html;
+    wireViewSwitchers();
+  }
+
+  /* ==========================================================================
+     Tab 5: Hansons Marathon Method
+     ========================================================================== */
+  function renderHansonsTab(data) {
+    const container = document.getElementById('hansons-panel-content');
+    if (!container) return;
+
+    let html = `
+      <div class="calculator-hero" style="border-left: 4px solid var(--color-hansons);">
+        <div class="hero-top">
+          <div>
+            <div class="hero-title" style="color:var(--color-hansons);">Hansons Marathon Method</div>
+            <p class="hero-desc">
+              Signature <strong>Strength Pace</strong> (MP - 10s/mile) and cumulative fatigue.
+            </p>
+            <a class="hero-source-link" href="${data.sourceUrl}" target="_blank" rel="noopener">
+              Official Source: lukehumphreyrunning.com/hmmcalculator ↗
+            </a>
+          </div>
+          <span class="brand-badge" style="background:var(--color-hansons);">Hansons-Brooks</span>
+        </div>
+        <div class="hero-metric-box">
+          <div class="metric-title">${data.metricTitle}</div>
+          <div class="metric-number" style="color:var(--color-hansons);">${data.metricValue}</div>
+          <div class="metric-sub">${data.metricSub}</div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span class="section-title">Hansons Training Paces</span>
+        <div class="view-switcher-pill" data-section="hansons">
+          <button class="view-btn ${state.viewModes.hansons === 'cards' ? 'active' : ''}" data-mode="cards">📱 Cards</button>
+          <button class="view-btn ${state.viewModes.hansons === 'table' ? 'active' : ''}" data-mode="table">📋 Table</button>
+        </div>
+      </div>
+    `;
+
+    if (state.viewModes.hansons === 'cards') {
+      html += `<div class="cards-list">`;
+      data.trainingPaces.forEach(p => {
+        const paceStr = p.singlePace
+          ? Units.formatPace(p.paceSecPerKm, state.isImperial)
+          : `${Units.formatPace(p.paceSecPerKmMin, state.isImperial)} - ${Units.formatPace(p.paceSecPerKmMax, state.isImperial)}`;
+
+        let splitsHtml = '';
+        if (p.splits) {
+          const splitList = Object.entries(p.splits).map(([d, t]) => `${d}: ${t}`).join(' • ');
+          splitsHtml = `<div class="card-subtitle" style="margin-top:2px;">Track Splits: ${splitList}</div>`;
+        }
+
+        html += `
+          <div class="mobile-card ${p.isHighlight ? 'is-cv' : ''}">
+            <div class="card-top">
+              <div class="card-title-group">
+                <span class="card-title" style="${p.isHighlight ? 'color:var(--color-hansons);' : ''}">${p.name}</span>
+                <span class="card-subtitle">${p.intensity}</span>
+              </div>
+              <div class="card-main-metric">
+                <span class="card-avg-val">${paceStr}</span>
+              </div>
+            </div>
+            ${splitsHtml}
+            <div class="card-subtitle">${p.purpose}</div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+    } else {
+      // Table
+      html += `
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr><th>Workout</th><th>Formula</th><th>Pace</th><th>Purpose</th></tr>
+            </thead>
+            <tbody>
+      `;
+      data.trainingPaces.forEach(p => {
+        const paceStr = p.singlePace
+          ? Units.formatPace(p.paceSecPerKm, state.isImperial)
+          : `${Units.formatPace(p.paceSecPerKmMin, state.isImperial)} - ${Units.formatPace(p.paceSecPerKmMax, state.isImperial)}`;
+        html += `
+          <tr class="${p.isHighlight ? 'highlight-row' : ''}">
+            <td><strong style="${p.isHighlight ? 'color:var(--color-hansons);' : ''}">${p.name}</strong></td>
+            <td>${p.intensity}</td>
+            <td class="font-mono">${paceStr}</td>
+            <td style="font-size:0.75rem;">${p.purpose}</td>
+          </tr>
+        `;
+      });
+      html += `</tbody></table></div>`;
+    }
+
+    container.innerHTML = html;
+    wireViewSwitchers();
+  }
+
+  /* ==========================================================================
+     Tab 6: 80/20 Endurance
+     ========================================================================== */
+  function renderEightyTwentyTab(data) {
+    const container = document.getElementById('eightytwenty-panel-content');
+    if (!container) return;
+
+    let html = `
+      <div class="calculator-hero" style="border-left: 4px solid var(--color-eightytwenty);">
+        <div class="hero-top">
+          <div>
+            <div class="hero-title" style="color:var(--color-eightytwenty);">80/20 Endurance</div>
+            <p class="hero-desc">
+              Matt Fitzgerald's 7-zone system anchored on Running Threshold Pace (rTP).
+            </p>
+            <a class="hero-source-link" href="${data.sourceUrl}" target="_blank" rel="noopener">
+              Official Source: 8020endurance.com/80-20-zone-calculator ↗
+            </a>
+          </div>
+          <span class="brand-badge" style="background:var(--color-eightytwenty); color:#000;">80/20</span>
+        </div>
+        <div class="hero-metric-box">
+          <div class="metric-title">${data.metricTitle}</div>
+          <div class="metric-number" style="color:var(--color-eightytwenty);">${data.metricValue}</div>
+          <div class="metric-sub">${data.metricSub}</div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span class="section-title">80/20 Official 7 Zones</span>
+        <div class="view-switcher-pill" data-section="eightytwenty">
+          <button class="view-btn ${state.viewModes.eightytwenty === 'cards' ? 'active' : ''}" data-mode="cards">📱 Cards</button>
+          <button class="view-btn ${state.viewModes.eightytwenty === 'table' ? 'active' : ''}" data-mode="table">📋 Table</button>
+        </div>
+      </div>
+    `;
+
+    if (state.viewModes.eightytwenty === 'cards') {
+      html += `<div class="cards-list">`;
+      data.trainingPaces.forEach(p => {
+        const paceStr = `${Units.formatPace(p.paceSecPerKmMin, state.isImperial)} - ${Units.formatPace(p.paceSecPerKmMax, state.isImperial)}`;
+        html += `
+          <div class="mobile-card">
+            <div class="card-top">
+              <div class="card-title-group">
+                <span class="card-title" style="color:var(--color-eightytwenty);">${p.name}</span>
+                <span class="card-subtitle">[${p.bucket}] • ${p.intensity}</span>
+              </div>
+              <div class="card-main-metric">
+                <span class="card-avg-val">${paceStr}</span>
+              </div>
+            </div>
+            <div class="card-subtitle">${p.purpose}</div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+    } else {
+      // Table
+      html += `
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr><th>Zone</th><th>Bucket</th><th>Intensity</th><th>Pace</th></tr>
+            </thead>
+            <tbody>
+      `;
+      data.trainingPaces.forEach(p => {
+        const paceStr = `${Units.formatPace(p.paceSecPerKmMin, state.isImperial)} - ${Units.formatPace(p.paceSecPerKmMax, state.isImperial)}`;
+        html += `
+          <tr>
+            <td><strong style="color:var(--color-eightytwenty);">${p.name}</strong></td>
+            <td><span class="badge badge-average">${p.bucket}</span></td>
+            <td>${p.intensity}</td>
+            <td class="font-mono">${paceStr}</td>
+          </tr>
+        `;
+      });
+      html += `</tbody></table></div>`;
+    }
+
+    container.innerHTML = html;
+    wireViewSwitchers();
+  }
+
+  /* ==========================================================================
+     Tab 7: RunnersCalc Multi-Model Predictor
+     ========================================================================== */
+  function renderRunnersCalcTab(data) {
+    const container = document.getElementById('runnerscalc-panel-content');
+    if (!container) return;
+
+    let html = `
+      <div class="calculator-hero" style="border-left: 4px solid var(--color-runnerscalc);">
+        <div class="hero-top">
+          <div>
+            <div class="hero-title" style="color:var(--color-runnerscalc);">RunnersCalc Multi-Predictor</div>
+            <p class="hero-desc">
+              Dave Cameron, Peter Riegel (1.06), and Vickers mileage models.
+            </p>
+            <a class="hero-source-link" href="${data.sourceUrl}" target="_blank" rel="noopener">
+              Official Source: runnerscalc.com ↗
+            </a>
+          </div>
+          <span class="brand-badge" style="background:var(--color-runnerscalc);">RunnersCalc</span>
+        </div>
+        <div class="hero-metric-box">
+          <div class="metric-title">${data.metricTitle}</div>
+          <div class="metric-number" style="color:var(--color-runnerscalc); font-size:1.4rem;">${data.metricValue}</div>
+          <div class="metric-sub">${data.metricSub}</div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span class="section-title">Official 14 Event Predictions</span>
+        <div class="view-switcher-pill" data-section="runnerscalc">
+          <button class="view-btn ${state.viewModes.runnerscalc === 'cards' ? 'active' : ''}" data-mode="cards">📱 Cards</button>
+          <button class="view-btn ${state.viewModes.runnerscalc === 'table' ? 'active' : ''}" data-mode="table">📋 Table</button>
+        </div>
+      </div>
+    `;
+
+    if (state.viewModes.runnerscalc === 'cards') {
+      html += `<div class="cards-list">`;
+      if (data.officialRows) {
+        data.officialRows.forEach(row => {
+          const paceStr = state.isImperial ? Units.formatTime(row.paceSecPerMi, false) + ' /mi' : Units.formatTime(row.paceSecPerKm, false) + ' /km';
+          html += `
+            <div class="mobile-card">
+              <div class="card-top">
+                <div class="card-title-group">
+                  <span class="card-title">${row.name}</span>
+                  <span class="card-subtitle">${row.km >= 1 ? row.km + ' km' : (row.km * 1000) + ' m'}</span>
+                </div>
+                <div class="card-main-metric">
+                  <span class="card-avg-val">${Units.formatTime(row.predictedTimeSec, true)}</span>
+                  <span class="card-avg-label">${paceStr}</span>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      }
+      html += `</div>`;
+    } else {
+      // Table
+      html += `
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr><th>Event</th><th>Predicted Time</th><th>Pace</th></tr>
+            </thead>
+            <tbody>
+      `;
+      if (data.officialRows) {
+        data.officialRows.forEach(row => {
+          const paceStr = state.isImperial ? Units.formatTime(row.paceSecPerMi, false) + ' /mi' : Units.formatTime(row.paceSecPerKm, false) + ' /km';
+          html += `
+            <tr>
+              <td><strong>${row.name}</strong></td>
+              <td class="font-mono">${Units.formatTime(row.predictedTimeSec, true)}</td>
+              <td class="font-mono">${paceStr}</td>
+            </tr>
+          `;
+        });
+      }
+      html += `</tbody></table></div>`;
+    }
+
+    container.innerHTML = html;
+    wireViewSwitchers();
+  }
+
+  /* ==========================================================================
+     Tab 8: Additional Classical Calculators
+     ========================================================================== */
+  function renderAdditionalTab(data) {
+    const container = document.getElementById('additional-panel-content');
+    if (!container) return;
+
+    let html = `
+      <div class="calculator-hero" style="border-left: 4px solid var(--color-classic);">
+        <div class="hero-top">
+          <div>
+            <div class="hero-title" style="color:var(--color-classic);">Classical Frameworks</div>
+            <p class="hero-desc">
+              Pete Pfitzinger (Advanced Marathoning), Jeff Galloway (Magic Mile), Frank Horwill (4s rule).
+            </p>
+          </div>
+          <span class="brand-badge" style="background:var(--color-classic);">Classic</span>
+        </div>
+        <div class="hero-metric-box">
+          <div class="metric-title">${data.metricTitle}</div>
+          <div class="metric-number" style="color:var(--color-classic);">${data.metricValue}</div>
+          <div class="metric-sub">${data.metricSub}</div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span class="section-title">Pfitzinger Training Paces</span>
+        <div class="view-switcher-pill" data-section="additional">
+          <button class="view-btn ${state.viewModes.additional === 'cards' ? 'active' : ''}" data-mode="cards">📱 Cards</button>
+          <button class="view-btn ${state.viewModes.additional === 'table' ? 'active' : ''}" data-mode="table">📋 Table</button>
+        </div>
+      </div>
+    `;
+
+    if (state.viewModes.additional === 'cards') {
+      html += `<div class="cards-list">`;
+      data.trainingPaces.forEach(p => {
+        const paceStr = p.singlePace
+          ? Units.formatPace(p.paceSecPerKm, state.isImperial)
+          : `${Units.formatPace(p.paceSecPerKmMin, state.isImperial)} - ${Units.formatPace(p.paceSecPerKmMax, state.isImperial)}`;
+
+        html += `
+          <div class="mobile-card">
+            <div class="card-top">
+              <div class="card-title-group">
+                <span class="card-title" style="color:var(--color-classic);">${p.name}</span>
+                <span class="card-subtitle">${p.intensity}</span>
+              </div>
+              <div class="card-main-metric">
+                <span class="card-avg-val">${paceStr}</span>
+              </div>
+            </div>
+            <div class="card-subtitle">${p.purpose}</div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+    } else {
+      // Table
+      html += `
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr><th>Workout</th><th>Intensity</th><th>Pace</th><th>Role</th></tr>
+            </thead>
+            <tbody>
+      `;
+      data.trainingPaces.forEach(p => {
+        const paceStr = p.singlePace
+          ? Units.formatPace(p.paceSecPerKm, state.isImperial)
+          : `${Units.formatPace(p.paceSecPerKmMin, state.isImperial)} - ${Units.formatPace(p.paceSecPerKmMax, state.isImperial)}`;
+        html += `
+          <tr>
+            <td><strong style="color:var(--color-classic);">${p.name}</strong></td>
+            <td>${p.intensity}</td>
+            <td class="font-mono">${paceStr}</td>
+            <td style="font-size:0.75rem;">${p.purpose}</td>
+          </tr>
+        `;
+      });
+      html += `</tbody></table></div>`;
+    }
+
+    container.innerHTML = html;
+    wireViewSwitchers();
+  }
+
+  /* ==========================================================================
+     Mobile SVG Chart Generation
+     ========================================================================== */
+  function renderComparisonCharts(analysis, results) {
+    const wrapper = document.getElementById('svg-race-curve-wrapper');
+    const legend = document.getElementById('race-curve-legend');
+    if (!wrapper || !legend) return;
+
+    const plotDistances = [
+      { name: '1.5K', m: 1500 },
+      { name: '1M', m: 1609.344 },
+      { name: '3K', m: 3000 },
+      { name: '5K', m: 5000 },
+      { name: '8K', m: 8000 },
+      { name: '10K', m: 10000 },
+      { name: 'Half', m: 21097.5 },
+      { name: 'Marathon', m: 42195 }
+    ];
+
+    const models = [
+      { id: 'daniels', name: 'Daniels', color: '#0a84ff', getSec: (m) => results.daniels.raceTimes.find(r => r.meters === m)?.paceSecPerKm },
+      { id: 'mcmillan', name: 'McMillan', color: '#30d158', getSec: (m) => results.mcmillan.raceTimes.find(r => r.meters === m)?.paceSecPerKm },
+      { id: 'tinman', name: 'Tinman', color: '#ff9f0a', getSec: (m) => results.tinman.raceTimes.find(r => r.meters === m)?.paceSecPerKm },
+      { id: 'hansons', name: 'Hansons', color: '#ffd60a', getSec: (m) => results.hansons.raceTimes.find(r => r.meters === m)?.paceSecPerKm },
+      { id: 'cameron', name: 'Cameron', color: '#bf5af2', getSec: (m) => (RunnersCalc.cameron(state.timeSeconds, state.distanceMeters, m) / m) * 1000.0 }
+    ];
+
+    // Populate Legend
+    legend.innerHTML = models.map(m => `
+      <div class="legend-item">
+        <span class="legend-dot" style="background:${m.color};"></span>
+        <span>${m.name}</span>
+      </div>
+    `).join('');
+
+    let allPaces = [];
+    models.forEach(model => {
+      plotDistances.forEach(d => {
+        const p = model.getSec(d.m);
+        if (p && Number.isFinite(p)) allPaces.push(Units.paceSeconds(p, state.isImperial));
+      });
+    });
+
+    if (allPaces.length === 0) return;
+
+    const minPace = Math.floor(Math.min(...allPaces) * 0.96);
+    const maxPace = Math.ceil(Math.max(...allPaces) * 1.04);
+
+    const width = wrapper.clientWidth || 390;
+    const height = 220;
+    const padding = { top: 15, right: 20, bottom: 35, left: 55 };
+    const chartW = width - padding.left - padding.right;
+    const chartH = height - padding.top - padding.bottom;
+
+    const getX = (index) => padding.left + (index / (plotDistances.length - 1)) * chartW;
+    const getY = (paceSec) => padding.top + chartH - ((paceSec - minPace) / (maxPace - minPace)) * chartH;
+
+    let svg = `<svg class="svg-chart" viewBox="0 0 ${width} ${height}" preserveAspectRatio="none">`;
+
+    // Horizontal Y Grid lines
+    const yTicks = 4;
+    for (let i = 0; i <= yTicks; i++) {
+      const paceVal = minPace + (i / yTicks) * (maxPace - minPace);
+      const yPos = getY(paceVal);
+      const paceLabel = Units.formatTime(paceVal, false);
+
+      svg += `
+        <line x1="${padding.left}" y1="${yPos}" x2="${width - padding.right}" y2="${yPos}" stroke="var(--border-color)" stroke-dasharray="2,3" stroke-width="1"/>
+        <text x="${padding.left - 6}" y="${yPos + 4}" fill="var(--text-muted)" font-size="10" text-anchor="end" font-family="var(--font-mono)">${paceLabel}</text>
+      `;
+    }
+
+    // X Axis Labels
+    plotDistances.forEach((d, i) => {
+      const xPos = getX(i);
+      svg += `
+        <line x1="${xPos}" y1="${padding.top}" x2="${xPos}" y2="${height - padding.bottom}" stroke="var(--border-color)" stroke-dasharray="1,4" stroke-width="0.75"/>
+        <text x="${xPos}" y="${height - padding.bottom + 16}" fill="var(--text-muted)" font-size="9.5" text-anchor="middle" font-weight="600">${d.name}</text>
+      `;
+    });
+
+    // Model Curves
+    models.forEach(model => {
+      const points = plotDistances.map((d, i) => {
+        const paceSec = Units.paceSeconds(model.getSec(d.m), state.isImperial);
+        return `${getX(i).toFixed(1)},${getY(paceSec).toFixed(1)}`;
+      }).join(' ');
+
+      svg += `
+        <polyline points="${points}" fill="none" stroke="${model.color}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+      `;
+
+      plotDistances.forEach((d, i) => {
+        const paceSec = Units.paceSeconds(model.getSec(d.m), state.isImperial);
+        svg += `<circle cx="${getX(i).toFixed(1)}" cy="${getY(paceSec).toFixed(1)}" r="2.8" fill="${model.color}"/>`;
+      });
+    });
+
+    svg += '</svg>';
+    wrapper.innerHTML = svg;
+  }
+
+  /* ==========================================================================
+     Wire View Switchers (Cards vs Table)
+     ========================================================================== */
+  function wireViewSwitchers() {
+    document.querySelectorAll('.view-switcher-pill').forEach(pill => {
+      const section = pill.dataset.section;
+      pill.querySelectorAll('.view-btn').forEach(btn => {
+        btn.onclick = () => {
+          const mode = btn.dataset.mode;
+          state.viewModes[section] = mode;
+          runCalculations();
+        };
+      });
+    });
+  }
+
+  /* ==========================================================================
+     Event Handlers & Interactivity Setup
+     ========================================================================== */
+  function setupEventListeners() {
+    // 1. Distance Preset Select
+    dom.distancePresetSelect.addEventListener('change', (e) => {
+      const val = e.target.value;
+      if (val === 'custom') {
+        dom.customDistanceGroup.style.display = 'flex';
+        updateCustomDistance();
+      } else {
+        dom.customDistanceGroup.style.display = 'none';
+        state.distanceMeters = parseFloat(val);
+        runCalculations();
+      }
+    });
+
+    // 2. Custom Distance
+    dom.customDistanceVal.addEventListener('input', updateCustomDistance);
+    dom.customDistanceUnit.addEventListener('change', updateCustomDistance);
+
+    function updateCustomDistance() {
+      const val = parseFloat(dom.customDistanceVal.value);
+      const unit = dom.customDistanceUnit.value;
+      if (!Number.isFinite(val) || val <= 0) return;
+
+      if (unit === 'km') state.distanceMeters = val * 1000.0;
+      else if (unit === 'mi') state.distanceMeters = val * Units.M_PER_MI;
+      else if (unit === 'm') state.distanceMeters = val;
+
+      runCalculations();
+    }
+
+    // 3. Time Box Inputs
+    const onTimeChange = () => {
+      const h = parseInt(dom.hoursInput.value || 0, 10);
+      const m = parseInt(dom.minutesInput.value || 0, 10);
+      const s = parseInt(dom.secondsInput.value || 0, 10);
+      const totalSec = h * 3600 + m * 60 + s;
+      if (totalSec > 0) {
+        state.timeSeconds = totalSec;
+        runCalculations();
+      }
+    };
+
+    dom.hoursInput.addEventListener('input', onTimeChange);
+    dom.minutesInput.addEventListener('input', onTimeChange);
+    dom.secondsInput.addEventListener('input', onTimeChange);
+
+    // 4. Quick Steppers (-1m, -10s, +10s, +1m)
+    dom.stepperButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const stepSec = parseInt(btn.dataset.step, 10);
+        let newSec = state.timeSeconds + stepSec;
+        if (newSec < 1) newSec = 1;
+
+        state.timeSeconds = newSec;
+
+        const h = Math.floor(newSec / 3600);
+        const m = Math.floor((newSec % 3600) / 60);
+        const s = newSec % 60;
+
+        dom.hoursInput.value = h;
+        dom.minutesInput.value = m;
+        dom.secondsInput.value = s;
+
+        runCalculations();
+      });
+    });
+
+    // 5. Benchmark Chips
+    dom.presetChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        dom.presetChips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+
+        const presetKey = chip.dataset.preset;
+        const b = BENCHMARKS[presetKey];
+        if (b) {
+          state.distanceMeters = b.dist;
+          state.timeSeconds = b.h * 3600 + b.m * 60 + b.s;
+
+          dom.hoursInput.value = b.h;
+          dom.minutesInput.value = b.m;
+          dom.secondsInput.value = b.s;
+
+          let matched = false;
+          for (const opt of dom.distancePresetSelect.options) {
+            if (Math.abs(parseFloat(opt.value) - b.dist) < 0.1) {
+              dom.distancePresetSelect.value = opt.value;
+              matched = true;
+              break;
+            }
+          }
+          if (!matched) {
+            dom.distancePresetSelect.value = 'custom';
+            dom.customDistanceGroup.style.display = 'flex';
+            dom.customDistanceVal.value = (b.dist / 1000).toFixed(2);
+            dom.customDistanceUnit.value = 'km';
+          } else {
+            dom.customDistanceGroup.style.display = 'none';
+          }
+
+          runCalculations();
+          showToast(`Loaded ${chip.textContent}`);
+        }
+      });
+    });
+
+    // 6. Unit Toggles (Header Pill + Bottom Dock)
+    const toggleUnits = () => {
+      state.isImperial = !state.isImperial;
+      if (dom.unitPillKm && dom.unitPillMi) {
+        dom.unitPillKm.classList.toggle('active', !state.isImperial);
+        dom.unitPillMi.classList.toggle('active', state.isImperial);
+      }
+      if (dom.dockUnitLabel) {
+        dom.dockUnitLabel.textContent = state.isImperial ? 'min/mi' : 'min/km';
+      }
+      runCalculations();
+      showToast(state.isImperial ? 'Switched to Imperial (min/mi)' : 'Switched to Metric (min/km)');
+    };
+
+    if (dom.unitToggleBtn) dom.unitToggleBtn.addEventListener('click', toggleUnits);
+    if (dom.dockUnitToggle) dom.dockUnitToggle.addEventListener('click', toggleUnits);
+
+    // 7. Theme Toggle
+    if (dom.themeToggleBtn) {
+      dom.themeToggleBtn.addEventListener('click', () => {
+        state.theme = state.theme === 'dark' ? 'light' : 'dark';
+        document.body.className = state.theme === 'light' ? 'light-theme' : 'dark-theme';
+        dom.themeToggleBtn.querySelector('.theme-icon').textContent = state.theme === 'light' ? '☀️' : '🌙';
+        try { localStorage.setItem('omnipace_mobile_theme', state.theme); } catch (e) {}
+        runCalculations();
+        showToast(state.theme === 'light' ? 'Light Theme Active' : 'Dark Theme Active');
+      });
+    }
+
+    // 8. Horizontal Tab Bar Switching
+    dom.tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetTab = btn.dataset.tab;
+        state.activeTab = targetTab;
+
+        dom.tabButtons.forEach(b => b.classList.toggle('active', b.dataset.tab === targetTab));
+        dom.tabPanels.forEach(p => p.classList.toggle('active', p.id === `${targetTab}-panel`));
+
+        // Smooth scroll tab button into view
+        btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+
+        if (targetTab === 'overall') {
+          setTimeout(runCalculations, 50);
+        }
+      });
+    });
+
+    // 9. Collapsible Advanced Settings
+    if (dom.optionalToggle && dom.optionalParams) {
+      dom.optionalToggle.addEventListener('click', () => {
+        const isHidden = dom.optionalParams.style.display === 'none';
+        dom.optionalParams.style.display = isHidden ? 'flex' : 'none';
+        dom.optionalToggle.querySelector('.toggle-arrow').textContent = isHidden ? '▲' : '▾';
+      });
+    }
+
+    if (dom.weeklyMilesInput) {
+      dom.weeklyMilesInput.addEventListener('input', (e) => {
+        state.weeklyMiles = parseInt(e.target.value, 10);
+        if (dom.weeklyMilesDisplay) dom.weeklyMilesDisplay.textContent = `${state.weeklyMiles} mi/week`;
+        runCalculations();
+      });
+    }
+
+    if (dom.riegelExponentInput) {
+      dom.riegelExponentInput.addEventListener('input', (e) => {
+        state.riegelExponent = parseFloat(e.target.value);
+        if (dom.riegelExponentDisplay) dom.riegelExponentDisplay.textContent = state.riegelExponent.toFixed(2);
+        runCalculations();
+      });
+    }
+
+    // 10. Copy Summary Actions
+    const onCopySummary = () => {
+      copySummaryToClipboard();
+    };
+
+    if (dom.copySummaryBtn) dom.copySummaryBtn.addEventListener('click', onCopySummary);
+    if (dom.dockCopyBtn) dom.dockCopyBtn.addEventListener('click', onCopySummary);
+
+    // Window Resize -> Re-render SVG chart
+    window.addEventListener('resize', () => {
+      if (state.activeTab === 'overall') {
+        runCalculations();
+      }
+    });
+  }
+
+  function copySummaryToClipboard() {
+    const results = {
+      daniels: DanielsVDOT.calculate(state.distanceMeters, state.timeSeconds),
+      mcmillan: McMillanRunning.calculate(state.distanceMeters, state.timeSeconds),
+      tinman: TinmanSchwartz.calculate(state.distanceMeters, state.timeSeconds),
+      hansons: HansonsMethod.calculate(state.distanceMeters, state.timeSeconds),
+      eightytwenty: EightyTwenty.calculate(state.distanceMeters, state.timeSeconds)
+    };
+    const analysis = ComparisonEngine.analyze(results);
+
+    let summaryText = `🏃 OmniPace Mobile Running Summary\n`;
+    summaryText += `Performance: ${Units.formatTime(state.timeSeconds, true)} @ ${(state.distanceMeters / 1000).toFixed(2)} km (${Units.formatPace((state.timeSeconds / state.distanceMeters) * 1000, state.isImperial)})\n\n`;
+
+    summaryText += `★ Est. Critical Velocity (CV): ${Units.formatPace(analysis.insights.cvSummary.avgPace, state.isImperial)}\n\n`;
+
+    summaryText += `🏆 Equivalent Race Times (Consensus Averages):\n`;
+    analysis.raceComparison.forEach(r => {
+      summaryText += `• ${r.name}: ${Units.formatTime(r.avgTimeSec, true)} (Fast: ${Units.formatTime(r.minTimeSec, true)} / Slow: ${Units.formatTime(r.maxTimeSec, true)})\n`;
+    });
+
+    summaryText += `\n⏱️ Key Training Paces:\n`;
+    analysis.paceComparison.forEach(p => {
+      summaryText += `• ${p.name}: ${Units.formatPace(p.avgPaceSec, state.isImperial)}\n`;
+    });
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(summaryText)
+        .then(() => showToast('📋 Summary copied to clipboard!'))
+        .catch(() => fallbackCopy(summaryText));
+    } else {
+      fallbackCopy(summaryText);
+    }
+  }
+
+  function fallbackCopy(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+      document.execCommand('copy');
+      showToast('📋 Summary copied to clipboard!');
+    } catch (err) {
+      showToast('⚠️ Could not copy summary');
+    }
+    document.body.removeChild(textarea);
+  }
+
+  // Initialization
+  document.addEventListener('DOMContentLoaded', () => {
+    initDom();
+
+    // Check saved theme
+    try {
+      const savedTheme = localStorage.getItem('omnipace_mobile_theme');
+      if (savedTheme) {
+        state.theme = savedTheme;
+        document.body.className = state.theme === 'light' ? 'light-theme' : 'dark-theme';
+        if (dom.themeToggleBtn) {
+          dom.themeToggleBtn.querySelector('.theme-icon').textContent = state.theme === 'light' ? '☀️' : '🌙';
+        }
+      }
+    } catch (e) {}
+
+    setupEventListeners();
+    runCalculations();
+  });
+
+})();
+
+</script>
+</body>
+</html>
